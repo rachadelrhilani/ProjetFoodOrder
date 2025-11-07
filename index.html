@@ -3,32 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link href="css/panier.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
   </head>
-  <body>
-    <div class="panier">
-      <div class="panier-info">
-        <div id="p-t">
+  <body class="">
+    <!-- panier popup -->
+    <div class="panier w-7/12 flex justify-center items-center border-2">
+      <div class="panier-info w-10/12 h-full">
+        <!-- titre -->
+        <div id="p-t" class="flex items-center">
           <i class="fa-solid fa-utensils"></i>
-          <h1>Panier</h1>
+          <h1 class="text-5xl">Panier</h1>
         </div>
-        <div class="p-content">
-          <div class="panier-plat">
+        <!--  -->
+        <div class="p-content flex flex-col justify-center items-center">
+          <!-- chaque plat -->
+          <div class="panier-plat flex justify-between items-center w-3/4">
             <img src="" alt="" />
             <div>
-              <button>-</button>
-              <input readonly type="number" />
-              <button>+</button>
+              <button class="text-4xl" id="decrease">-</button>
+              <input readonly type="number" class="text-4xl" />
+              <button class="text-4xl" id="increase">+</button>
             </div>
-            <label>$</label>
-            <input readonly type="number" />
+            <label class="text-3xl">$100</label>
+            <select class="text-3xl">
+              <option value="">S</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+            </select>
             <button>X</button>
           </div>
+          <!--  -->
           <hr />
         </div>
       </div>
