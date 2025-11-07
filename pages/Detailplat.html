@@ -6,21 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restoran - Spécialité</title>
   <link rel="stylesheet" href="../css/detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
   <!-- Header -->
   <header class="bg-[#0F172A] text-white flex items-center justify-between px-6 py-4">
     <div class="flex items-center space-x-2">
-      <img src="/logo.png" alt="logo" class="w-8 h-8" />
-      <h1 class="text-lg font-bold">Restoran</h1>
+      <h1 class="text-lg font-bold text-yellow-500"><i class="fa fa-utensils me-3"></i>Restoran</h1>
     </div>
     <nav class="hidden md:flex items-center space-x-6 text-sm">
       <a href="#" class="hover:text-yellow-400">Accueil</a>
       <a href="#" class="hover:text-yellow-400">Menu</a>
       <a href="#" class="hover:text-yellow-400">Contact</a>
       <button
-        class="hidden md:block bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 rounded-md font-semibold">Pannier</button>
+        class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
+        <span>Pannier</span>
+        <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" />
+      </button>
     </nav>
     <!-- Menu icon for mobile -->
     <button id="menu-btn" class="md:hidden">
@@ -94,12 +97,11 @@
         <p class="text-sm mt-1">+012 345 67890</p>
         <p class="text-sm mt-1">info@example.com</p>
         <div class="flex space-x-3 mt-4">
-          <a href="#"><img src="/facebook.png" alt="facebook"
+          <a href="#"><img src="../images/facebook.png" alt="facebook"
               class="w-6 h-6 hover:scale-110 transition-transform" /></a>
-          <a href="#"><img src="/twitter.png" alt="twitter" class="w-6 h-6 hover:scale-110 transition-transform" /></a>
-          <a href="#"><img src="/instagram.png" alt="instagram"
+          <a href="#"><img src="../images/twitter.png" alt="twitter"
               class="w-6 h-6 hover:scale-110 transition-transform" /></a>
-          <a href="#"><img src="/linkedin.png" alt="linkedin"
+          <a href="#"><img src="../images/youtube.png" alt="instagram"
               class="w-6 h-6 hover:scale-110 transition-transform" /></a>
         </div>
       </div>
@@ -129,6 +131,7 @@
     </div>
 
 
+
     <!-- Bottom Footer -->
     <div class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
       <p>
@@ -140,7 +143,15 @@
         <a href="#" class="hover:text-yellow-400">Menu</a>
         <a href="#" class="hover:text-yellow-400">Contact Us</a>
       </div>
+
     </div>
+    <div class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <p>
+        Distributed By
+        <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
+      </p>
+    </div>
+
   </footer>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
