@@ -1,110 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restoran - Spécialité</title>
-    <link rel="stylesheet" href="../css/detail.css">
-  </head>
-  <body class="bg-gray-50 font-sans">
-    <!-- Header -->
-    <header class="bg-[#0F172A] text-white flex items-center justify-between px-6 py-4">
-      <div class="flex items-center space-x-2">
-        <img src="/logo.png" alt="logo" class="w-8 h-8" />
-        <h1 class="text-lg font-bold">Restoran</h1>
-      </div>
-      <nav class="hidden md:flex items-center space-x-6 text-sm">
-        <a href="#" class="hover:text-yellow-400">Accueil</a>
-        <a href="#" class="hover:text-yellow-400">Menu</a>
-        <a href="#" class="hover:text-yellow-400">Contact</a>
-        <button class="hidden md:block bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 rounded-md font-semibold">Pannier</button>
-      </nav>
-      <!-- Menu icon for mobile -->
-      <button id="menu-btn" class="md:hidden">
-        <img src="/images/menu-logo.png" alt="menu" class="w-8 h-8"/>
-      </button>
-    </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden flex-col items-center bg-[#0F172A] text-white md:hidden py-4 space-y-3">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restoran - Spécialité</title>
+  <link rel="stylesheet" href="../css/detail.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-[#0F172A] text-white flex items-center justify-between px-6 py-4">
+    <div class="flex items-center space-x-2">
+      <img src="/logo.png" alt="logo" class="w-8 h-8" />
+      <h1 class="text-lg font-bold">Restoran</h1>
+    </div>
+    <nav class="hidden md:flex items-center space-x-6 text-sm">
       <a href="#" class="hover:text-yellow-400">Accueil</a>
       <a href="#" class="hover:text-yellow-400">Menu</a>
       <a href="#" class="hover:text-yellow-400">Contact</a>
-      <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-4 py-2 rounded-md font-semibold">Réserver</button>
+      <button
+        class="hidden md:block bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 rounded-md font-semibold">Pannier</button>
+    </nav>
+    <!-- Menu icon for mobile -->
+    <button id="menu-btn" class="md:hidden">
+      <img src="/images/menu-logo.png" alt="menu" class="w-8 h-8" />
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden block items-center bg-[#0F172A] text-white md:hidden py-4 space-y-3">
+    <a href="#" class="hover:text-yellow-400">Accueil</a>
+    <a href="#" class="hover:text-yellow-400">Menu</a>
+    <a href="#" class="hover:text-yellow-400">Contact</a>
+    <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-4 py-2 rounded-md font-semibold">Réserver</button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-[url('../images/Background.png')] h-9x1 bg-cover bg-center py-40 md:py-60 text-white">
+    <div class="flex justify-center">
+      <h2 class="text-3xl md:text-5xl font-bold">Découvrez le goût<br> unique de notre <br> spécialité</h2>
+    </div>
+  </section>
+
+  <!-- Spécialité Section -->
+  <section class="max-w-3xl mx-auto my-16 text-center px-4">
+    <div class="flex justify-center items-center space-x-2 mb-6">
+      <div class="w-10 h-[2px] bg-yellow-500"></div>
+      <img src="/star-icon.png" alt="icon" class="w-6 h-6" />
+      <div class="w-10 h-[2px] bg-yellow-500"></div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="bg-[url('../images/Background.png')] h-9x1 bg-cover bg-center py-40 md:py-60 text-white">
-      <h2 class="text-3xl ml-[25rem] md:text-5xl font-bold">Découvrez le goût<br> unique de notre <br> spécialité</h2>
-    </section>
+    <h3 class="text-2xl font-bold mb-6">Pizza Margherita Classica</h3>
+    <img src="/specialite.jpg" alt="Pizza Margherita" class="rounded-2xl shadow-md mx-auto mb-6 w-full max-w-md" />
 
-    <!-- Spécialité Section -->
-    <section class="max-w-3xl mx-auto my-16 text-center px-4">
-      <div class="flex justify-center items-center space-x-2 mb-6">
-        <div class="w-10 h-[2px] bg-yellow-500"></div>
-        <img src="/star-icon.png" alt="icon" class="w-6 h-6" />
-        <div class="w-10 h-[2px] bg-yellow-500"></div>
+    <p class="text-gray-700 leading-relaxed mb-6">
+      La Pizza Margherita Classica est une création faite avec des ingrédients
+      italiens traditionnels. Sa pâte légère et croustillante, accompagnée
+      d'une sauce tomate fraîche, de mozzarella fondante et de basilic frais,
+      offre une expérience gustative authentique.
+    </p>
+
+    <ul class="text-left text-gray-700 mb-6">
+      <li><strong>Ingrédients :</strong> tomate, mozzarella, basilic, huile d’olive</li>
+      <li><strong>Temps de préparation :</strong> 15 minutes</li>
+      <li><strong>Prix :</strong> 60 MAD</li>
+    </ul>
+
+    <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold">Commander</button>
+  </section>
+
+  <footer class="bg-[#0F172A] text-gray-300 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+      <!-- Company -->
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-yellow-400">Accueil</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Menu</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+        </ul>
       </div>
 
-      <h3 class="text-2xl font-bold mb-6">Pizza Margherita Classica</h3>
-      <img src="/specialite.jpg" alt="Pizza Margherita" class="rounded-2xl shadow-md mx-auto mb-6 w-full max-w-md" />
 
-      <p class="text-gray-700 leading-relaxed mb-6">
-        La Pizza Margherita Classica est une création faite avec des ingrédients
-        italiens traditionnels. Sa pâte légère et croustillante, accompagnée
-        d'une sauce tomate fraîche, de mozzarella fondante et de basilic frais,
-        offre une expérience gustative authentique.
+      <!-- Contact -->
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Contact</h4>
+        <p class="text-sm">123 Street, New York, USA</p>
+        <p class="text-sm mt-1">+012 345 67890</p>
+        <p class="text-sm mt-1">info@example.com</p>
+        <div class="flex space-x-3 mt-4">
+          <a href="#"><img src="/facebook.png" alt="facebook"
+              class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+          <a href="#"><img src="/twitter.png" alt="twitter" class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+          <a href="#"><img src="/instagram.png" alt="instagram"
+              class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+          <a href="#"><img src="/linkedin.png" alt="linkedin"
+              class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+        </div>
+      </div>
+
+
+      <!-- Opening -->
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Opening</h4>
+        <p class="text-sm">Monday - Saturday<br /><span class="text-gray-400">09AM - 09PM</span></p>
+        <p class="text-sm mt-3">Sunday<br /><span class="text-gray-400">10AM - 08PM</span></p>
+      </div>
+
+
+      <!-- Newsletter -->
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Newsletter</h4>
+        <p class="text-sm mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+        <div class="flex bg-white rounded-md overflow-hidden max-w-xs">
+          <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 text-gray-700 focus:outline-none" />
+          <button class="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold ml-1 px-">SIGNUP</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <p>
+        © <span class="text-yellow-500 font-semibold">FoodOrder</span>, All Rights Reserved. Designed By
+        <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
       </p>
-
-      <ul class="text-left text-gray-700 mb-6">
-        <li><strong>Ingrédients :</strong> tomate, mozzarella, basilic, huile d’olive</li>
-        <li><strong>Temps de préparation :</strong> 15 minutes</li>
-        <li><strong>Prix :</strong> 60 MAD</li>
-      </ul>
-
-      <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold">Commander</button>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#0F172A] text-gray-300 py-10 px-6">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-3">Company</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-yellow-400">À propos</a></li>
-            <li><a href="#" class="hover:text-yellow-400">Carrières</a></li>
-            <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-3">Contact</h4>
-          <p>Email: info@restoran.com</p>
-          <p>Téléphone: +212 6 00 00 00 00</p>
-          <p>Adresse: Casablanca, Maroc</p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-3">Suivez-nous</h4>
-          <div class="flex space-x-3">
-            <img src="/facebook.png" alt="facebook" class="w-6 h-6 cursor-pointer" />
-            <img src="/instagram.png" alt="instagram" class="w-6 h-6 cursor-pointer" />
-            <img src="/twitter.png" alt="twitter" class="w-6 h-6 cursor-pointer" />
-          </div>
-        </div>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-yellow-400">Accueil</a>
+        <a href="#" class="hover:text-yellow-400">Menu</a>
+        <a href="#" class="hover:text-yellow-400">Contact Us</a>
       </div>
-      <div class="text-center text-sm text-gray-500 mt-8">
-        © 2025 Restoran. Tous droits réservés.
-      </div>
-    </footer>
-<script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      const menuBtn = document.getElementById('menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
+    </div>
+  </footer>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    </script>
-  </body>
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
 </html>
