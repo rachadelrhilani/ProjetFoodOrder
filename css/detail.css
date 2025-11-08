@@ -4,6 +4,8 @@ font-family: "Nunito";
 font-weight: 800;
 }
 header{
-text-transform: uppercase;
- transition: transform 0.3s ease, box-shadow 0.3s ease;
+ z-index: 2;
+}
+#mobile-menu{
+    z-index: 2;
 }
