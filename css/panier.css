@@ -6,17 +6,15 @@
   color: #0f172b;
 }
 hr {
-  color: #000;
-  background: #000;
+  color: #0f172b;
+  background: #0f172b;
   width: 90%;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.panier {
-  height: 40vh;
+  height: 100vh;
 }
 .panier-info {
   h1 {
@@ -24,9 +22,8 @@ body {
   }
 }
 .panier-prix {
-  background: #fea116;
-  height: 100%;
-  width: 30%;
+  background: #fea11655;
+  backdrop-filter: blur(100px);
 }
 i {
   color: #fea116;
@@ -52,4 +49,21 @@ i {
 img {
   width: 80px;
   height: 80px;
+}
+.panier {
+  height: 400px;
+}
+.panier-prix {
+  height: 100%;
+}
+#commander {
+  background: #0f172b;
+  color: #fea116;
+  border: solid 1px #0f172b;
+  transition: 0.5s;
+}
+#commander:hover {
+  background: #fea116;
+  color: #0f172b;
+  border: solid 1px #0f172b;
 }

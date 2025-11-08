@@ -11,38 +11,116 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title></title>
   </head>
-  <body class="">
+  <body>
+    <!--  -->
     <!-- panier popup -->
-    <div class="panier w-7/12 flex justify-center items-center border-2">
-      <div class="panier-info w-10/12 h-full">
+    <!--  -->
+    <div class="panier h-full w-7/12 flex border-2 rounded-3xl">
+      <div class="panier-info w-10/12 overflow-auto h-full">
         <!-- titre -->
-        <div id="p-t" class="flex items-center">
+        <div id="p-t" class="flex items-center p-2">
           <i class="fa-solid fa-utensils"></i>
           <h1 class="text-5xl">Panier</h1>
         </div>
         <!--  -->
         <div class="p-content flex flex-col justify-center items-center">
           <!-- chaque plat -->
-          <div class="panier-plat flex justify-between items-center w-3/4">
-            <img src="" alt="" />
+          <div
+            class="panier-plat flex justify-between items-center w-4/4 p-3.5"
+          >
+            <img src="" alt="plat" />
+            <h2 class="text-3xl">Chicken burger</h2>
             <div>
-              <button class="text-4xl" id="decrease">-</button>
+              <button class="text-4xl decrease">-</button>
               <input readonly type="number" class="text-4xl" />
-              <button class="text-4xl" id="increase">+</button>
+              <button class="text-4xl increase">+</button>
             </div>
-            <label class="text-3xl">$100</label>
             <select class="text-3xl">
               <option value="">S</option>
               <option value="">L</option>
               <option value="">XL</option>
             </select>
-            <button>X</button>
+            <label class="text-3xl price-tag">$100</label>
+            <button class="text-3xl cancel">X</button>
           </div>
           <!--  -->
-          <hr />
+          <!-- chaque plat -->
+          <div
+            class="panier-plat flex justify-between items-center w-4/4 p-3.5"
+          >
+            <img src="" alt="plat" />
+            <h2 class="text-3xl">Chicken burger</h2>
+            <div>
+              <button class="text-4xl decrease">-</button>
+              <input readonly type="number" class="text-4xl" />
+              <button class="text-4xl increase">+</button>
+            </div>
+            <select class="text-3xl">
+              <option value="">S</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+            </select>
+            <label class="text-3xl price-tag">$100</label>
+            <button class="text-3xl cancel">X</button>
+          </div>
+          <!--  -->
+          <!-- chaque plat -->
+          <div
+            class="panier-plat flex justify-between items-center w-4/4 p-3.5"
+          >
+            <img src="" alt="plat" />
+            <h2 class="text-3xl">Chicken burger</h2>
+            <div>
+              <button class="text-4xl decrease">-</button>
+              <input readonly type="number" class="text-4xl" />
+              <button class="text-4xl increase">+</button>
+            </div>
+            <select class="text-3xl">
+              <option value="">S</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+            </select>
+            <label class="text-3xl price-tag">$100</label>
+            <button class="text-3xl cancel">X</button>
+          </div>
+          <!--  -->
+          <!-- chaque plat -->
+          <div
+            class="panier-plat flex justify-between items-center w-4/4 p-3.5"
+          >
+            <img src="" alt="plat" />
+            <h2 class="text-3xl">Chicken burger</h2>
+            <div>
+              <button class="text-4xl decrease">-</button>
+              <input readonly type="number" class="text-4xl" />
+              <button class="text-4xl increase">+</button>
+            </div>
+            <select class="text-3xl">
+              <option value="">S</option>
+              <option value="">L</option>
+              <option value="">XL</option>
+            </select>
+            <label class="text-3xl price-tag">$100</label>
+            <button class="text-3xl cancel">X</button>
+          </div>
+          <!--  -->
         </div>
       </div>
-      <div class="panier-prix"><h1>Sommaire</h1></div>
+      <!-- panier sidebar -->
+      <div
+        class="panier-prix h-full border-l-2 w-1/4 flex justify-around items-center flex-col rounded-r-3xl"
+      >
+        <h1 class="text-3xl">Sommaire</h1>
+        <hr />
+        <div class="grid grid-cols-2 gap-2">
+          <h4>3 Plat</h4>
+          <h4>200</h4>
+          <h4>Livraison:</h4>
+          <h4>50</h4>
+        </div>
+        <h2 class="text-2xl">Total: 200</h2>
+        <button id="commander" class="p-2 rounded-2xl">Commander</button>
+      </div>
     </div>
   </body>
 </html>
