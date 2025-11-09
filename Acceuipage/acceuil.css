@@ -18,11 +18,20 @@ header {
 /************************************ styling nav bar  **********************************/
 
 nav {
-    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 5%;
+    background-color: transparent; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+}
+.scrol {
+    background: #0f172b;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav .logo {
@@ -109,7 +118,7 @@ nav button i {
 
 .header-content {
     width: 90%;
-    margin: 0 auto;
+    margin: 3rem auto;
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -368,6 +377,7 @@ main .first-part {
 }
 
 .menu-card img {
+    border-radius: 10px;
     width: 100%;
     height: 150px;
 }
