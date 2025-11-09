@@ -67,3 +67,16 @@ img {
   color: #0f172b;
   border: solid 1px #0f172b;
 }
+
+@media screen and (max-width: 400px) {
+  .panier {
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .panier-prix {
+    width: 100%;
+    border-radius: 0;
+  }
+}
