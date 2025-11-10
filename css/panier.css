@@ -25,7 +25,7 @@ body {
   background: #fea11655;
   backdrop-filter: blur(100px);
 }
-i {
+.panier i {
   color: #fea116;
   font-size: 40px;
 }
@@ -83,6 +83,10 @@ h2 {
   border: #555 1px solid;
   width: 60%;
   border-radius: 5px;
+}
+.paiment * {
+  color: #000;
+  font-weight: normal;
 }
 
 /* mobile */

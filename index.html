@@ -75,9 +75,9 @@
     <!-- Formule de Payement -->
     <!-- -->
     <div
-      class="paiment flex flex-col justify-center items-center h-11/12 w-11/12 border"
+      class="paiment flex flex-col justify-between items-center h-11/12 w-11/12 border"
     >
-      <h1>Paiement</h1>
+      <h1><i class="fa-solid fa-utensils"></i> Paiement</h1>
       <hr />
       <h2>Nom</h2>
       <div class="flex justify-around">
@@ -97,10 +97,12 @@
         <input type="text" />
       </div>
       <h3>Method de paiement</h3>
-      <input type="radio" name="pay" id="" />
-      <label for="">Carte debit/credit</label>
-      <input type="radio" name="pay" id="" />
-      <img src="images/image 1.png" alt="" />
+      <div class="w-5/10 grid grid-cols-2 grid-rows-2 gap-0">
+        <input type="radio" name="pay" id="" />
+        <label for="">Carte debit/credit</label>
+        <input type="radio" name="pay" id="" />
+        <img src="images/paypal.png" alt="paypal" />
+      </div>
     </div>
   </body>
 </html>
