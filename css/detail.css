@@ -6,6 +6,9 @@ font-weight: 800;
 header{
  z-index: 2;
 }
+.detail{
+    border-radius: 0px 50px 0px 50px;
+}    
 #mobile-menu{
     z-index: 2;
 }
