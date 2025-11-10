@@ -67,6 +67,9 @@ img {
   color: #0f172b;
   border: solid 1px #0f172b;
 }
+img {
+  border: solid 1px;
+}
 
 @media screen and (max-width: 400px) {
   .panier {
@@ -74,9 +77,33 @@ img {
     width: 90%;
     flex-direction: column;
     border-radius: 0;
+    align-items: center;
   }
   .panier-prix {
     width: 100%;
     border-radius: 0;
+  }
+  .panier-plat {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .panier-plat img {
+    height: 160px;
+    width: 160px;
+  }
+  .panier-prix {
+    height: 300px;
+    background: #fea116;
+    border: none;
+  }
+  .pm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+  .plat-count {
+    width: 200px;
   }
 }
