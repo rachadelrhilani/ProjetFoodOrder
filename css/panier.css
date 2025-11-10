@@ -52,7 +52,9 @@ i {
 }
 .panier {
   height: 400px;
+  /*  */
   display: none;
+  /*  */
 }
 .panier-prix {
   height: 100%;
@@ -72,6 +74,18 @@ i {
   border: solid 1px;
 }
 
+/* Paiment */
+.paiment h1,
+h2 {
+  color: #000;
+}
+.paiment input {
+  border: #555 1px solid;
+  width: 60%;
+  border-radius: 5px;
+}
+
+/* mobile */
 @media screen and (max-width: 400px) {
   .panier {
     height: 90%;
@@ -109,5 +123,17 @@ i {
   }
   .pc {
     width: 100%;
+  }
+  .paiment input {
+    border: #555 1px solid;
+    width: 40%;
+    border-radius: 5px;
+  }
+  .address {
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: 100px;
+    gap: 100px;
+    background: #000;
   }
 }
