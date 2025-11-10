@@ -46,7 +46,7 @@ i {
   }
 }
 
-img {
+.panier-plat img {
   width: 80px;
   height: 80px;
 }
@@ -67,7 +67,7 @@ img {
   color: #0f172b;
   border: solid 1px #0f172b;
 }
-img {
+.panier-plat img {
   border: solid 1px;
 }
 
@@ -99,11 +99,14 @@ img {
   .pm {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 10px;
   }
   .plat-count {
-    width: 200px;
+    width: 300px;
+  }
+  .pc {
+    width: 100%;
   }
 }
