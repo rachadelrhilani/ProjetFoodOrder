@@ -8,8 +8,8 @@ burger.addEventListener("click", function () {
 
 //////////////////////// nav bar (responsive) ///////////////////
 
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
+addEventListener("scroll", function () {
+    if (window.scrollY > 10) {
         nav.classList.add("scrol");
     } else {
         nav.classList.remove("scrol");
