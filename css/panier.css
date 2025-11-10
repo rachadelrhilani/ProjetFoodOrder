@@ -52,6 +52,7 @@ i {
 }
 .panier {
   height: 400px;
+  display: none;
 }
 .panier-prix {
   height: 100%;
