@@ -36,7 +36,7 @@ fetch("../data/menu.json")
       <div>
         <h3 class="text-2xl font-bold mb-6 text-center">${plat.name}</h3>
         <img src="${plat.image}" alt="${plat.name}" 
-  class=" shadow-md mx-auto mb-6 w-full max-w-2xl h-[450px] object-cover detail" />
+  class=" shadow-md mx-auto mb-6 w-[600px] max-w-2xl h-[590px] object-cover detail" />
       </div>
 
       <p class="text-gray-700 text-left leading-relaxed mb-6">
@@ -53,7 +53,7 @@ fetch("../data/menu.json")
         ${plat.ingredients.map(ing => `<li>${ing}</li>`).join('')}
       </ul>
      
-      <div class="flex flex-col gap-3">
+      <div class="flex flex-col gap-2">
         
         <input 
           type="number" 
@@ -66,9 +66,10 @@ fetch("../data/menu.json")
         <select 
           class="p-1 border border-gray-300 rounded text-black"
         >
-          <option>Petite</option>
-          <option>Moyenne</option>
-          <option>Grande</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
         </select>
 
         <!-- Total prix -->
