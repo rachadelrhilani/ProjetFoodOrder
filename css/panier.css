@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  font-size: 16px;
+}
 * {
   font-family: "Nunito";
   font-weight: 800;
@@ -77,14 +80,20 @@ body {
 .paiment {
   display: none;
 }
-.paiment h1,
-h2 {
+.paiment h2 {
   color: #000;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .paiment input {
-  border: #555 1px solid;
-  width: 60%;
+  border: #888 1px solid;
+  width: 100%;
   border-radius: 5px;
+  font-size: 24px;
+}
+.paiment input::placeholder {
+  color: #bbb;
+  font-size: 1rem;
 }
 .paiment * {
   color: #000;
@@ -98,6 +107,14 @@ h2 {
 .c-achat {
   background-color: #fea116;
   color: #0f172b;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+.adress {
+  width: 80%;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  gap: 10px;
 }
 .address input {
   width: 100%;
@@ -115,6 +132,9 @@ h2 {
 }
 /* mobile */
 @media screen and (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
   .panier {
     height: 90%;
     width: 90%;
@@ -152,16 +172,26 @@ h2 {
   .pc {
     width: 100%;
   }
+  /* paiement */
   .paiment input {
     border: #555 1px solid;
-    width: 40%;
+    width: 45%;
     border-radius: 5px;
+    padding: 1rem;
   }
-  .address {
-    display: grid;
-    grid-template-rows: repeat(4, 100px);
-    grid-template-columns: 100px;
-    gap: 100px;
-    background: #000;
+  .paiment h2 {
+    font-size: 3rem;
+  }
+  .in-email {
+    width: 100%;
+  }
+  .adress {
+    width: 100%;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 10px;
+  }
+  .adress input {
+    width: 100%;
   }
 }

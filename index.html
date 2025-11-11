@@ -88,37 +88,37 @@
     <div
       class="paiment flex flex-col justify-between items-center h-11/12 w-11/12 border p-3 md:w-5/12"
     >
-      <h1 class="text-4xl flex">
+      <h1 class="text-5xl flex">
         <i class="fa-solid fa-utensils"></i> Paiement
       </h1>
       <hr />
       <h2 class="text-2xl">Nom</h2>
-      <div class="flex justify-around">
+      <div class="flex justify-between gap-5">
         <input type="text" placeholder="Nom" />
         <input type="text" placeholder="Prenom" />
       </div>
       <h2>Email</h2>
-      <div class="flex justify-around">
-        <input type="email" placeholder="@gmail.com" class="in-email w-5/6" />
-      </div>
+      <input type="email" placeholder="@gmail.com" class="in-email w-full" />
       <h2>Adresse</h2>
-      <div class="adress grid grid-cols-2 grid-rows-4">
+      <div class="adress grid">
         <input type="text" placeholder="Ligne 1" />
         <input type="text" placeholder="Ligne 2" />
         <input type="text" placeholder="ville" />
         <input type="text" placeholder="region" />
         <input type="text" placeholder="Code Postal" />
       </div>
-      <h3>Method de paiement</h3>
-      <div class="w-full flex justify-start items-center">
-        <input type="radio" name="pay" />
-        <label for="">Carte debit/credit</label>
+      <h3 class="text-2xl">Method de paiement:</h3>
+      <div class="">
+        <div class="w-full flex justify-start items-center">
+          <input class="" type="radio" name="pay" />
+          <label class="" for="">Carte debit/credit</label>
+        </div>
+        <div class="w-full flex justify-start items-center">
+          <input class="" type="radio" name="pay" />
+          <img src="images/paypal.png" alt="paypal" />
+        </div>
       </div>
-      <div class="w-full flex justify-center items-center">
-        <input type="radio" name="pay" />
-        <img src="images/paypal.png" alt="paypal" />
-      </div>
-      <button class="c-achat p-2 rounded-2xl">Confirmer</button>
+      <button class="c-achat p-2">Confirmer</button>
     </div>
   </body>
 </html>
