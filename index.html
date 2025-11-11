@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Site de restaurant proposant un menu varié et des plats délicieux."
+    />
+    <meta
+      name="keywords"
+      content="restaurant, food, menu, repas, Maroc, livraison, cuisine, Restoran"
+    />
+    <meta name="author" content="Ton Nom ou Nom du site" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -68,41 +77,48 @@
           <h4>50</h4>
         </div>
         <h2 class="text-2xl">Total: 200</h2>
-        <button id="commander" class="p-2 rounded-2xl">Commander</button>
+        <button id="commander" onclick="toPay()" class="p-2 rounded-2xl">
+          Commander
+        </button>
       </div>
     </div>
 
     <!-- Formule de Payement -->
     <!-- -->
     <div
-      class="paiment flex flex-col justify-between items-center h-11/12 w-11/12 border"
+      class="paiment flex flex-col justify-between items-center h-11/12 w-11/12 border p-3 md:w-5/12"
     >
-      <h1><i class="fa-solid fa-utensils"></i> Paiement</h1>
+      <h1 class="text-4xl flex">
+        <i class="fa-solid fa-utensils"></i> Paiement
+      </h1>
       <hr />
-      <h2>Nom</h2>
+      <h2 class="text-2xl">Nom</h2>
       <div class="flex justify-around">
-        <input type="text" />
-        <input type="password" />
+        <input type="text" placeholder="Nom" />
+        <input type="text" placeholder="Prenom" />
       </div>
       <h2>Email</h2>
       <div class="flex justify-around">
-        <input type="email" class="in-email w-5/6" />
+        <input type="email" placeholder="@gmail.com" class="in-email w-5/6" />
       </div>
       <h2>Adresse</h2>
-      <div class="adress">
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+      <div class="adress grid grid-cols-2 grid-rows-4">
+        <input type="text" placeholder="Ligne 1" />
+        <input type="text" placeholder="Ligne 2" />
+        <input type="text" placeholder="ville" />
+        <input type="text" placeholder="region" />
+        <input type="text" placeholder="Code Postal" />
       </div>
       <h3>Method de paiement</h3>
-      <div class="w-5/10 grid grid-cols-2 grid-rows-2 gap-0">
-        <input type="radio" name="pay" id="" />
+      <div class="w-full flex justify-start items-center">
+        <input type="radio" name="pay" />
         <label for="">Carte debit/credit</label>
-        <input type="radio" name="pay" id="" />
+      </div>
+      <div class="w-full flex justify-center items-center">
+        <input type="radio" name="pay" />
         <img src="images/paypal.png" alt="paypal" />
       </div>
+      <button class="c-achat p-2 rounded-2xl">Confirmer</button>
     </div>
   </body>
 </html>

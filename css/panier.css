@@ -53,7 +53,6 @@ body {
 .panier {
   height: 400px;
   /*  */
-  display: none;
   /*  */
 }
 .panier-prix {
@@ -75,6 +74,9 @@ body {
 }
 
 /* Paiment */
+.paiment {
+  display: none;
+}
 .paiment h1,
 h2 {
   color: #000;
@@ -88,7 +90,29 @@ h2 {
   color: #000;
   font-weight: normal;
 }
-
+.paiment i {
+  color: #fea116;
+  font-size: 40px;
+  font-weight: bold;
+}
+.c-achat {
+  background-color: #fea116;
+  color: #0f172b;
+}
+.address input {
+  width: 100%;
+}
+.adress input:nth-child(1),
+.adress input:nth-child(2),
+.adress input:nth-child(5) {
+  grid-column: 1 / 3;
+}
+.adress input:nth-child(3) {
+  grid-column: 1/2;
+}
+.adress input:nth-child(4) {
+  grid-column: 2/3;
+}
 /* mobile */
 @media screen and (max-width: 400px) {
   .panier {
