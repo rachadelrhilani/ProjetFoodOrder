@@ -81,6 +81,9 @@ hr {
 .panier-plat img {
   border: solid 1px;
 }
+.pm{
+  display: flex;
+}
 
 /* Paiment */
 .paiment {
@@ -140,11 +143,12 @@ hr {
   grid-column: 2/3;
 }
 /* mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   html {
     font-size: 8px;
   }
   .panier {
+    top :5%;
     height: 90%;
     width: 90%;
     flex-direction: column;
