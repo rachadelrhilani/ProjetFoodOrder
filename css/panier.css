@@ -3,21 +3,19 @@
 html {
   font-size: 16px;
 }
-* {
-  font-family: "Nunito";
-  font-weight: 800;
-  color: #0f172b;
-}
 hr {
   color: #0f172b;
   background: #0f172b;
   width: 90%;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.Z{
+  display: none;
+  justify-content: center;align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #0005;
+  position: fixed;
+  z-index: 11;
 }
 .panier-info {
   h1 {
@@ -54,7 +52,11 @@ body {
   height: 80px;
 }
 .panier {
-  height: 400px;
+  display: none;
+  position: fixed;
+  z-index: 50;
+  height: 500px;
+  background: white;
   /*  */
   /*  */
 }
@@ -79,6 +81,9 @@ body {
 /* Paiment */
 .paiment {
   display: none;
+  position: fixed;
+  z-index: 50;
+  background: #fff;
 }
 .paiment h2 {
   color: #000;
