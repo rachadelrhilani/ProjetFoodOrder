@@ -1,59 +1,56 @@
-const Menu_url = '../Menu.json'
+const Menu_url = '../Menu.json';
 
-const BreakfastCard = document.getElementById('Breakfast-card');
-// const buttonWrap = document.getElementById('button-wrap');
-
-async function data() {
-    try{
-        const res = await fetch(Menu_url);
-        if(!res.ok) throw new Error('response is not ok');
-        const data = await res.json();
-        return data;
-    }catch(error){
-        console.error('Error : ', error);
-    }
-} 
+async function fetchMenu() {
+  const res = await fetch(Menu_url);
+  if (!res.ok) throw new Error('Failed to fetch menu.json');
+  return await res.json();
+}
 
 const loadData = async () => {
-    const cleanData = await data();
-    const lunch = cleanData.filter((meal) => meal.mealType === "Breakfast");
+  const data = await fetchMenu();
 
+  // Separate meal types
+  const meals = {
+    Breakfast: data.filter(m => m.mealType === "Breakfast"),
+    Lunch: data.filter(m => m.mealType === "Lunch"),
+  };
+
+  // Render helper (works for both)
+  function setupMealSection(type) {
+    const cardContainer = document.getElementById(`${type}-card`);
+    const leftBtn = document.querySelector(`#${type}-wrap-buttons #swipLeft`);
+    const rightBtn = document.querySelector(`#${type}-wrap-buttons #swipRight`);
     let index = 0;
 
     const renderCard = () => {
-        BreakfastCard.innerHTML = '';
-        const card = document.createElement('div');
-        card.className = 'flex flex-row gap-5';
-        card.innerHTML = `
-            <img src="${lunch[index].image}" class="w-20 h-20">
-            <div class="mt-3">
-                <p class="font-extrabold text-2xl">${lunch[index].name}</p>
-                <p>${lunch[index].description}</p>
-            </div>
-            <p class="font-extrabold text-yellow-500 mt-5 text-2xl">$${lunch[index].price}</p>
-        `;
-        BreakfastCard.append(card);
-    }
+      const meal = meals[type][index];
+      cardContainer.innerHTML = `
+        <div class="flex flex-row gap-5">
+          <img src="${meal.image}" class="w-20 h-20">
+          <div class="mt-3">
+            <p class="font-extrabold text-2xl">${meal.name}</p>
+            <p>${meal.description}</p>
+          </div>
+          <p class="font-extrabold text-yellow-500 mt-5 text-2xl">$${meal.price}</p>
+        </div>
+      `;
+    };
 
-    const swipRight = document.getElementById('swipRight');
-    
-    swipRight.addEventListener('click', () => {
-        index++;
-        if(index >= lunch.length) index = 0;
-        renderCard();
+    rightBtn.addEventListener('click', () => {
+      index = (index + 1) % meals[type].length;
+      renderCard();
     });
-    
-    const swipLeft = document.getElementById('swipLeft');
-    swipLeft.addEventListener('click', () => {
-        index--;
-        if(index < 0) index = lunch.length - 1;
-        renderCard();
-    })
-    
-    // buttonWrap.append(swipRight);
-    // buttonWrap.append(swipLeft);
+
+    leftBtn.addEventListener('click', () => {
+      index = (index - 1 + meals[type].length) % meals[type].length;
+      renderCard();
+    });
 
     renderCard();
-}
+  }
+
+  setupMealSection("Breakfast");
+  setupMealSection("Lunch");
+};
 
 loadData();
