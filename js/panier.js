@@ -14,6 +14,6 @@ function panierOn() {
 }
 Z.addEventListener("click", () => {
   panier.style.display = "none";
-  Z.style.display = "none";
+  Z.style.display   = "none";
   pay.style.display = "none";
 })
