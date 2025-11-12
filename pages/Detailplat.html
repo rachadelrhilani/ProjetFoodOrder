@@ -17,15 +17,16 @@
       <h1 class="text-lg font-bold text-yellow-500"><i class="fa fa-utensils me-3"></i>Restoran</h1>
     </div>
     <nav class="hidden md:flex items-center space-x-6 text-sm">
-      <a href="#" class="hover:text-yellow-400">Accueil</a>
+      <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
       <a href="#" class="hover:text-yellow-400">Menu</a>
       <a href="#" class="hover:text-yellow-400">Contact</a>
-      <button
+      <button id="btn-panier"
         class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
         <span>Pannier</span>
         <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" />
       </button>
     </nav>
+
 
     <button id="menu-btn" class="md:hidden">
       <img src="/images/menu-logo.png" alt="menu" class="w-8 h-8" />
@@ -33,14 +34,129 @@
   </header>
 
   <div id="mobile-menu" class="hidden flex flex-col bg-[#0F172A] text-white md:hidden py-4 space-y-3 shadow-lg">
-    <a href="#" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Accueil</a>
+    <a href="../index.html" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Accueil</a>
     <a href="#" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Menu</a>
     <a href="#" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Contact</a>
-    <button
+    <button id="btn-panier"
       class="bg-yellow-500 flex hover:bg-yellow-400 text-white ml-6 px-4 py-2 font-semibold w-[120px] space-x-2"><span>Pannier</span>
       <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" /></button>
   </div>
+  
+<div id="popup-panier"
+  class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
 
+  <div class="panier h-5/6 w-7/12 flex border-2 rounded-3xl bg-white text-black relative">
+    
+    <button id="close-panier"
+      class="absolute top-3 right-5 text-4xl font-bold text-gray-600 hover:text-black">&times;</button>
+
+    
+    <div class="panier-info w-10/12 overflow-auto h-full p-4">
+      
+      <div id="p-title" class="flex items-center gap-2 mb-4">
+        <i class="fa-solid fa-utensils text-2xl text-yellow-500"></i>
+        <h1 class="text-3xl font-bold">Panier</h1>
+      </div>
+
+      
+      <div class="p-content flex flex-col justify-center items-center gap-4">
+        <div class="panier-plat flex justify-between items-center w-full p-3 border rounded-xl">
+          <img src="../images/plat1.jpg" alt="plat" class="w-20 h-20 rounded-xl object-cover" />
+          <h2 class="text-xl">Chicken Burger</h2>
+          <div class="pm flex items-center gap-2">
+            <button class="text-2xl decrease px-2">-</button>
+            <input readonly type="number" value="1" class="text-xl w-12 text-center border rounded-md plat-count" />
+            <button class="text-2xl increase px-2">+</button>
+          </div>
+          <select class="text-xl border rounded-md px-2 py-1 plat-size">
+            <option value="">S</option>
+            <option value="">L</option>
+            <option value="">XL</option>
+          </select>
+          <div class="pc flex justify-between items-center gap-4">
+            <label class="text-xl font-semibold price-tag">$100</label>
+            <button class="text-xl text-red-600 cancel">X</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div
+      class="panier-prix h-full border-l-2 w-1/4 flex justify-around items-center flex-col rounded-r-3xl bg-gray-100">
+      <h1 class="text-2xl font-bold">Sommaire</h1>
+      <hr class="w-3/4" />
+      <div class="grid grid-cols-2 gap-2 text-lg">
+        <h4>3 Plats</h4>
+        <h4>$200</h4>
+        <h4>Livraison:</h4>
+        <h4>$50</h4>
+      </div>
+      <h2 class="text-xl font-semibold">Total: $250</h2>
+      <button id="commander"
+        class="p-2 bg-yellow-500 hover:bg-yellow-400 text-white rounded-2xl w-3/4 font-semibold">Commander</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="popup-paiement"
+  class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+  
+  <div
+    class="paiment flex flex-col justify-between items-center h-5/6 w-3/5 border-2 rounded-3xl bg-white text-black relative p-6">
+    
+    
+    <button id="close-paiement"
+      class="absolute top-3 right-5 text-4xl font-bold text-gray-600 hover:text-black">&times;</button>
+
+    <h1 class="text-3xl font-bold mb-4">
+      <i class="fa-solid fa-utensils text-yellow-500"></i> Paiement
+    </h1>
+    <hr class="w-full mb-4" />
+
+    
+    <h2 class="text-xl font-semibold">Nom</h2>
+    <div class="flex justify-around w-full mb-4 gap-4">
+      <input type="text" placeholder="Prénom" class="border p-2 w-1/2 rounded-lg" />
+      <input type="text" placeholder="Nom" class="border p-2 w-1/2 rounded-lg" />
+    </div>
+
+    
+    <h2 class="text-xl font-semibold">Email</h2>
+    <div class="flex justify-around w-full mb-4">
+      <input type="email" class="border p-2 rounded-lg w-5/6" placeholder="exemple@email.com" />
+    </div>
+
+    
+    <h2 class="text-xl font-semibold">Adresse</h2>
+    <div class="grid grid-cols-1 gap-2 w-5/6 mb-4">
+      <input type="text" placeholder="Rue" class="border p-2 rounded-lg" />
+      <input type="text" placeholder="Ville" class="border p-2 rounded-lg" />
+      <input type="text" placeholder="Code postal" class="border p-2 rounded-lg" />
+      <input type="text" placeholder="Pays" class="border p-2 rounded-lg" />
+    </div>
+
+    
+    <h3 class="text-xl font-semibold mb-2">Méthode de paiement</h3>
+    <div class="grid grid-cols-2 items-center gap-4 w-5/6">
+      <label class="flex items-center gap-2">
+        <input type="radio" name="pay" class="accent-yellow-500" />
+        Carte Débit/Crédit
+      </label>
+      <label class="flex items-center gap-2">
+        <input type="radio" name="pay" class="accent-yellow-500" />
+        <img src="images/paypal.png" alt="paypal" class="w-16" />
+      </label>
+    </div>
+
+    
+    <button class="mt-6 bg-yellow-500 hover:bg-yellow-400 text-white px-6 py-2 rounded-2xl font-semibold">
+      Valider le paiement
+    </button>
+  </div>
+</div>
 
   <section class="bg-[url('../images/Background.png')] h-9x1 bg-cover bg-center py-40 md:py-60 text-white">
     <div class="flex justify-center">

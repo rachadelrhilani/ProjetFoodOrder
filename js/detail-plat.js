@@ -14,6 +14,51 @@ window.addEventListener("scroll", () => {
     header.classList.remove("transform", "-translate-y-full", "transition-transform", "duration-300", "ease-in-out");
   }
 });
+/* pop up panier */
+ const btnPanier = document.getElementById('btn-panier');
+  const popupPanier = document.getElementById('popup-panier');
+  const closePanier = document.getElementById('close-panier');
+
+  
+  btnPanier.addEventListener('click', () => {
+    popupPanier.classList.remove('hidden');
+  });
+
+  
+  closePanier.addEventListener('click', () => {
+    popupPanier.classList.add('hidden');
+  });
+
+  
+  popupPanier.addEventListener('click', (e) => {
+    if (e.target === popupPanier) {
+      popupPanier.classList.add('hidden');
+    }
+  });
+
+  /* pop up paiement */
+
+  const commanderBtn = document.getElementById('commander');
+  const popupPaiement = document.getElementById('popup-paiement');
+  const closePaiement = document.getElementById('close-paiement');
+
+
+  commanderBtn.addEventListener('click', () => {
+    popupPanier.classList.add('hidden');
+    popupPaiement.classList.remove('hidden');
+  });
+
+  
+  closePaiement.addEventListener('click', () => {
+    popupPaiement.classList.add('hidden');
+  });
+
+  
+  popupPaiement.addEventListener('click', (e) => {
+    if (e.target === popupPaiement) {
+      popupPaiement.classList.add('hidden');
+    }
+  });
 
 fetch("../data/menu.json")
   .then(response => {
@@ -23,7 +68,6 @@ fetch("../data/menu.json")
     return response.json();
   })
   .then(data => {
-    // Exemple : récupérer le plat avec l'id 1
     const plat = data.find(item => item.id === 1);
     console.log(plat);
     const container = document.getElementById("plat-content");
@@ -31,7 +75,6 @@ fetch("../data/menu.json")
       container.innerHTML = "<p class='text-center text-red-500'>Plat introuvable.</p>";
       return;
     }
-    // Créer le HTML dynamiquement
     container.innerHTML = `
       <div>
         <h3 class="text-2xl font-bold mb-6 text-center">${plat.name}</h3>

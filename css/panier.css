@@ -1,0 +1,143 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  font-family: "Nunito";
+  font-weight: 800;
+  color: #0f172b;
+}
+hr {
+  color: #0f172b;
+  background: #0f172b;
+  width: 90%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.panier-info {
+  h1 {
+    font-size: 40px;
+  }
+}
+.panier-prix {
+  background: #fea11655;
+  backdrop-filter: blur(100px);
+}
+.panier i {
+  color: #fea116;
+  font-size: 40px;
+}
+.panier-plat {
+  input {
+    background: #0f172b;
+    color: #fea116;
+    width: 60px;
+  }
+  select,
+  option {
+    background: #0f172b;
+    color: #fea116;
+    width: 60px;
+  }
+  label {
+    color: #fea116;
+  }
+}
+
+.panier-plat img {
+  width: 80px;
+  height: 80px;
+}
+.panier {
+  height: 400px;
+  /*  */
+  display: none;
+  /*  */
+}
+.panier-prix {
+  height: 100%;
+}
+#commander {
+  background: #0f172b;
+  color: #fea116;
+  border: solid 1px #0f172b;
+  transition: 0.5s;
+}
+#commander:hover {
+  background: #fea116;
+  color: #0f172b;
+  border: solid 1px #0f172b;
+}
+.panier-plat img {
+  border: solid 1px;
+}
+
+/* Paiment */
+.paiment h1,
+h2 {
+  color: #000;
+}
+.paiment input {
+  border: #555 1px solid;
+  width: 60%;
+  border-radius: 5px;
+}
+.paiment * {
+  color: #000;
+  font-weight: normal;
+}
+
+/* mobile */
+@media screen and (max-width: 400px) {
+  .panier {
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 0;
+    align-items: center;
+  }
+  .panier-prix {
+    width: 100%;
+    border-radius: 0;
+  }
+  .panier-plat {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .panier-plat img {
+    height: 160px;
+    width: 160px;
+  }
+  .panier-prix {
+    height: 300px;
+    background: #fea116;
+    border: none;
+  }
+  .pm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .plat-count {
+    width: 300px;
+  }
+  .pc {
+    width: 100%;
+  }
+  .paiment input {
+    border: #555 1px solid;
+    width: 40%;
+    border-radius: 5px;
+  }
+  .address {
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: 100px;
+    gap: 100px;
+    background: #000;
+  }
+}
