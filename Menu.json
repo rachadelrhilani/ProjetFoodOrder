@@ -1,222 +1,295 @@
 [
-  {
-    "id": 1,
-    "name": "Pizza Margherita",
-    "category": "Plat",
-    "mealType": "Lunch",
-    "description": "Pizza traditionnelle avec sauce tomate, mozzarella et basilic frais.",
-    "price": 8.99,
-    "image": "../images/Overlay1+Background.png",
-    "size": ["S", "M", "L", "XL"],
-    "availability": true
-  },
-  {
-    "id": 2,
-    "name": "Burger Classique",
-    "category": "Plat",
-    "mealType": "Lunch",
-    "description": "Burger avec steak de bœuf, fromage cheddar, laitue, tomate et sauce maison.",
-    "price": 10.50,
-    "image": "https://example.com/images/burger-classique.jpg",
-    "size": ["Simple", "Double"],
-    "availability": true
-  },
-  {
-    "id": 3,
-    "name": "Spaghetti Carbonara",
-    "category": "Plat",
-    "mealType": "Breakfast",
-    "description": "Pâtes italiennes à la crème, lardons, œuf et parmesan.",
-    "price": 11.20,
-    "image": "https://example.com/images/spaghetti-carbonara.jpg",
-    "size": ["M", "L"],
-    "availability": true
-  },
-  {
-    "id": 4,
-    "name": "Salade César",
-    "category": "Entrée",
-    "mealType": "Lunch",
-    "description": "Salade fraîche avec poulet grillé, croûtons, parmesan et sauce César.",
-    "price": 7.80,
-    "image": "https://example.com/images/salade-cesar.jpg",
-    "size": ["Petite", "Grande"],
-    "availability": true
-  },
-  {
-    "id": 5,
-    "name": "Tacos Poulet",
-    "category": "Plat",
-    "mealType": "Snack",
-    "description": "Tortilla garnie de poulet mariné, frites, fromage et sauce blanche.",
-    "price": 6.90,
-    "image": "https://example.com/images/tacos-poulet.jpg",
-    "size": ["S", "M", "L"],
-    "availability": true
-  },
-  {
-    "id": 6,
-    "name": "Couscous Royal",
-    "category": "Plat Marocain",
-    "mealType": "Dinner",
-    "description": "Couscous traditionnel avec légumes, merguez, poulet et agneau.",
-    "price": 13.50,
-    "image": "https://example.com/images/couscous-royal.jpg",
-    "size": ["M", "L"],
-    "availability": true
-  },
-  {
-    "id": 7,
-    "name": "Sandwich Thon",
-    "category": "Snack",
-    "mealType": "Snack",
-    "description": "Sandwich garni de thon, œuf dur, salade, tomate et mayonnaise.",
-    "price": 5.40,
-    "image": "https://example.com/images/sandwich-thon.jpg",
-    "size": ["Standard"],
-    "availability": true
-  },
-  {
-    "id": 8,
-    "name": "Crêpe Nutella",
-    "category": "Dessert",
-    "mealType": "Dessert",
-    "description": "Crêpe sucrée garnie de Nutella et éclats de noisettes.",
-    "price": 4.50,
-    "image": "https://example.com/images/crepe-nutella.jpg",
-    "size": ["Unique"],
-    "availability": true
-  },
-  {
-    "id": 9,
-    "name": "Pizza 4 Fromages",
-    "category": "Plat",
-    "mealType": "Lunch",
-    "description": "Pizza fondante au mélange de mozzarella, gorgonzola, emmental et parmesan.",
-    "price": 9.80,
-    "image": "https://example.com/images/pizza-4fromages.jpg",
-    "size": ["S", "M", "L", "XL"],
-    "availability": true
-  },
-  {
-    "id": 10,
-    "name": "Tagine de Poulet Citron",
-    "category": "Plat Marocain",
-    "mealType": "Dinner",
-    "description": "Poulet mijoté au citron confit et aux olives vertes.",
-    "price": 12.90,
-    "image": "https://example.com/images/tagine-poulet-citron.jpg",
-    "size": ["M", "L"],
-    "availability": true
-  },
-  {
-    "id": 11,
-    "name": "Sushi Mix",
-    "category": "Plat Japonais",
-    "mealType": "Lunch",
-    "description": "Assortiment de sushis variés : saumon, thon, avocat, crevette.",
-    "price": 14.20,
-    "image": "https://example.com/images/sushi-mix.jpg",
-    "size": ["8 pièces", "12 pièces", "16 pièces"],
-    "availability": true
-  },
-  {
-    "id": 12,
-    "name": "Pâtes Bolognaise",
-    "category": "Plat",
-    "mealType": "Lunch",
-    "description": "Spaghetti à la sauce tomate, viande hachée et herbes aromatiques.",
-    "price": 9.60,
-    "image": "https://example.com/images/pates-bolognaise.jpg",
-    "size": ["M", "L"],
-    "availability": true
-  },
-  {
-    "id": 13,
-    "name": "Soupe Harira",
-    "category": "Entrée Marocain",
-    "mealType": "Lunch",
-    "description": "Soupe traditionnelle marocaine à base de tomates, lentilles et pois chiches.",
-    "price": 5.00,
-    "image": "https://example.com/images/soupe-harira.jpg",
-    "size": ["Bol", "Grande"],
-    "availability": true
-  },
-  {
-    "id": 14,
-    "name": "Cheesecake Fruits Rouges",
-    "category": "Dessert",
-    "mealType": "Breakfast",
-    "description": "Cheesecake onctueux avec coulis de fruits rouges et base croquante.",
-    "price": 5.90,
-    "image": "https://example.com/images/cheesecake-fruitsrouges.jpg",
-    "size": ["Part", "Grande part"],
-    "availability": true
-  },
-  {
-    "id": 15,
-    "name": "Wrap Poulet Curry",
-    "category": "Snack",
-    "mealType": "Snack",
-    "description": "Wrap garni de poulet au curry, crudités et sauce légère.",
-    "price": 6.20,
-    "image": "https://example.com/images/wrap-poulet-curry.jpg",
-    "size": ["Standard"],
-    "availability": true
-  },
-  {
-    "id": 16,
-    "name": "Omelette Fromage",
-    "category": "Petit Déjeuner",
-    "mealType": "Breakfast",
-    "description": "Omelette moelleuse au fromage, servie avec pain et salade.",
-    "price": 4.80,
-    "image": "https://example.com/images/omelette-fromage.jpg",
-    "size": ["1 œuf", "2 œufs", "3 œufs"],
-    "availability": true
-  },
-  {
-    "id": 17,
-    "name": "Chawarma Viande",
-    "category": "Plat",
-    "mealType": "Lunch",
-    "description": "Pain libanais garni de viande marinée, légumes et sauce blanche.",
-    "price": 7.70,
-    "image": "https://example.com/images/chawarma-viande.jpg",
-    "size": ["S", "M", "L"],
-    "availability": true
-  },
-  {
-    "id": 18,
-    "name": "Pizza Végétarienne",
-    "category": "Plat",
-    "mealType": "Lunch",
-    "description": "Pizza légère avec légumes grillés, olives et fromage.",
-    "price": 8.50,
-    "image": "https://example.com/images/pizza-vegetarienne.jpg",
-    "size": ["S", "M", "L", "XL"],
-    "availability": true
-  },
-  {
-    "id": 19,
-    "name": "Tiramisu",
-    "category": "Dessert Italien",
-    "mealType": "Dessert",
-    "description": "Dessert italien au café, mascarpone et cacao.",
-    "price": 5.50,
-    "image": "https://example.com/images/tiramisu.jpg",
-    "size": ["Part", "Grande part"],
-    "availability": true
-  },
-  {
-    "id": 20,
-    "name": "Steak Frites",
-    "category": "Plat",
-    "mealType": "Dinner",
-    "description": "Steak de bœuf grillé servi avec frites et sauce au choix.",
-    "price": 12.40,
-    "image": "https://example.com/images/steak-frites.jpg",
-    "size": ["M", "L"],
-    "availability": true
-  }
+    {
+        "id": 1,
+        "name": "Pizza Margherita",
+        "category": "Plat",
+        "mealType": "Lunch",
+        "description": "Pizza traditionnelle avec sauce tomate, mozzarella et basilic frais.",
+        "price": 8.99,
+        "image": "/images/menu-1.jpg.png",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "availability": false,
+        "ingredients": [
+            "Tomate",
+            "Mozzarella",
+            "Huile d’olive",
+            "Basilic"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Burger Classique",
+        "category": "Plat",
+        "mealType": "Lunch",
+        "description": "Burger avec steak de bœuf, fromage cheddar, laitue, tomate et sauce maison.",
+        "price": 10.50,
+        "image": "/images/menu-2.jpg.png",
+        "size": [
+            "Simple",
+            "Double"
+        ],
+        "availability": true
+    },
+    {
+        "id": 3,
+        "name": "Spaghetti Carbonara",
+        "category": "Plat",
+        "mealType": "Breakfast",
+        "description": "Pâtes italiennes à la crème, lardons, œuf et parmesan.",
+        "price": 11.20,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "M",
+            "L"
+        ],
+        "availability": true
+    },
+    {
+        "id": 4,
+        "name": "Salade César",
+        "category": "Entrée",
+        "mealType": "Lunch",
+        "description": "Salade fraîche avec poulet grillé, croûtons, parmesan et sauce César.",
+        "price": 7.80,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "Petite",
+            "Grande"
+        ],
+        "availability": false
+    },
+    {
+        "id": 5,
+        "name": "Tacos Poulet",
+        "category": "Plat",
+        "mealType": "Snack",
+        "description": "Tortilla garnie de poulet mariné, frites, fromage et sauce blanche.",
+        "price": 6.90,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "availability": true
+    },
+    {
+        "id": 6,
+        "name": "Couscous Royal",
+        "category": "Plat Marocain",
+        "mealType": "Dinner",
+        "description": "Couscous traditionnel avec légumes, merguez, poulet et agneau.",
+        "price": 13.50,
+        "image": "/images/menu-4.jpg.png",
+        "size": [
+            "M",
+            "L"
+        ],
+        "availability": false
+    },
+    {
+        "id": 7,
+        "name": "Sandwich Thon",
+        "category": "Snack",
+        "mealType": "Snack",
+        "description": "Sandwich garni de thon, œuf dur, salade, tomate et mayonnaise.",
+        "price": 5.40,
+        "image": "/images/menu-4.jpg.png",
+        "size": [
+            "Standard"
+        ],
+        "availability": false
+    },
+    {
+        "id": 8,
+        "name": "Crêpe Nutella",
+        "category": "Dessert",
+        "mealType": "Dessert",
+        "description": "Crêpe sucrée garnie de Nutella et éclats de noisettes.",
+        "price": 4.50,
+        "image": "/images/menu-5.jpg.png",
+        "size": [
+            "Unique"
+        ],
+        "availability": true
+    },
+    {
+        "id": 9,
+        "name": "Pizza 4 Fromages",
+        "category": "Plat",
+        "mealType": "Lunch",
+        "description": "Pizza fondante au mélange de mozzarella, gorgonzola, emmental et parmesan.",
+        "price": 9.80,
+        "image": "/images/menu-6.jpg.png",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "availability": true
+    },
+    {
+        "id": 10,
+        "name": "Tagine de Poulet Citron",
+        "category": "Plat Marocain",
+        "mealType": "Dinner",
+        "description": "Poulet mijoté au citron confit et aux olives vertes.",
+        "price": 12.90,
+        "image": "/images/menu-7.jpg.png",
+        "size": [
+            "M",
+            "L"
+        ],
+        "availability": true
+    },
+    {
+        "id": 11,
+        "name": "Sushi Mix",
+        "category": "Plat Japonais",
+        "mealType": "Lunch",
+        "description": "Assortiment de sushis variés : saumon, thon, avocat, crevette.",
+        "price": 14.20,
+        "image": "/images/menu-8.jpg.png",
+        "size": [
+            "8 pièces",
+            "12 pièces",
+            "16 pièces"
+        ],
+        "availability": false
+    },
+    {
+        "id": 12,
+        "name": "Pâtes Bolognaise",
+        "category": "Plat",
+        "mealType": "Lunch",
+        "description": "Spaghetti à la sauce tomate, viande hachée et herbes aromatiques.",
+        "price": 9.60,
+        "image": "/images/menu-4.jpg.png",
+        "size": [
+            "M",
+            "L"
+        ],
+        "availability": false
+    },
+    {
+        "id": 13,
+        "name": "Soupe Harira",
+        "category": "Entrée Marocain",
+        "mealType": "Lunch",
+        "description": "Soupe traditionnelle marocaine à base de tomates, lentilles et pois chiches.",
+        "price": 5.00,
+        "image": "/images/menu-4.jpg.png",
+        "size": [
+            "Bol",
+            "Grande"
+        ],
+        "availability": true
+    },
+    {
+        "id": 14,
+        "name": "Cheesecake Fruits Rouges",
+        "category": "Dessert",
+        "mealType": "Breakfast",
+        "description": "Cheesecake onctueux avec coulis de fruits rouges et base croquante.",
+        "price": 5.90,
+        "image": "/images/menu-4.jpg.png",
+        "size": [
+            "Part",
+            "Grande part"
+        ],
+        "availability": false
+    },
+    {
+        "id": 15,
+        "name": "Wrap Poulet Curry",
+        "category": "Snack",
+        "mealType": "Breakfast",
+        "description": "Wrap garni de poulet au curry, crudités et sauce légère.",
+        "price": 6.20,
+        "image": "/images/menu-4.jpg.png",
+        "size": [
+            "Standard"
+        ],
+        "availability": true
+    },
+    {
+        "id": 16,
+        "name": "Omelette Fromage",
+        "category": "Petit Déjeuner",
+        "mealType": "Breakfast",
+        "description": "Omelette moelleuse au fromage, servie avec pain et salade.",
+        "price": 4.80,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "1 œuf",
+            "2 œufs",
+            "3 œufs"
+        ],
+        "availability": true
+    },
+    {
+        "id": 17,
+        "name": "Chawarma Viande",
+        "category": "Plat",
+        "mealType": "Lunch",
+        "description": "Pain libanais garni de viande marinée, légumes et sauce blanche.",
+        "price": 7.70,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "availability": false
+    },
+    {
+        "id": 18,
+        "name": "Pizza Végétarienne",
+        "category": "Plat",
+        "mealType": "Lunch",
+        "description": "Pizza légère avec légumes grillés, olives et fromage.",
+        "price": 8.50,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "availability": false
+    },
+    {
+        "id": 19,
+        "name": "Tiramisu",
+        "category": "Dessert Italien",
+        "mealType": "Dinner",
+        "description": "Dessert italien au café, mascarpone et cacao.",
+        "price": 5.50,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "Part",
+            "Grande part"
+        ],
+        "availability": true
+    },
+    {
+        "id": 20,
+        "name": "Steak Frites",
+        "category": "Plat",
+        "mealType": "Dinner",
+        "description": "Steak de bœuf grillé servi avec frites et sauce au choix.",
+        "price": 12.40,
+        "image": "/images/menu-3.jpg.png",
+        "size": [
+            "M",
+            "L"
+        ],
+        "availability": false
+    }
 ]
