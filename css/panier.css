@@ -27,8 +27,7 @@ hr {
   }
 }
 .panier-prix {
-  background: #fea11655;
-  backdrop-filter: blur(100px);
+  background: #fea116;
 }
 .panier i {
   color: #fea116;
@@ -183,6 +182,7 @@ hr {
   }
   .plat-count {
     width: 300px;
+    text-align: center;
   }
   .pc {
     width: 100%;
