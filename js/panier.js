@@ -20,3 +20,18 @@ Z.addEventListener("click", () => {
 // propagation
 panier.addEventListener("click", (e) => e.stopPropagation() )
 pay.addEventListener("click", (e) => e.stopPropagation() )
+//the calcul stuff
+const platCount = document.querySelector(".plat-count")
+const plus = document.querySelector(".increase")
+const minus = document.querySelector(".decrease")
+platCount.value = 0
+plus.addEventListener("click", () => {
+    platCount.value = parseInt(platCount.value) + 1;
+});
+minus.addEventListener("click", () => {
+  if (platCount.value == 1) {
+  }
+  else{
+    platCount.value = parseInt(platCount.value) - 1;
+  }
+});
