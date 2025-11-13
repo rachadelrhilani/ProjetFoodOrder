@@ -77,3 +77,59 @@ fetch("/data/menu.json")
 
 /////////// pagination using javascript //////////////////
 
+fetch("/data/testimonials.json")
+    .then(res => res.json())
+    .then(data => {
+        renderTestimonials(data);
+    });
+
+function renderTestimonials(data) {
+    const container = document.getElementById("testimonial-container");
+    const pagination = document.getElementById("testimonial-pagination");
+
+    data.forEach((item, index) => {
+        const card = document.createElement("div");
+        card.classList.add("testimonial-card");
+        if (index === 0) card.classList.add("active");
+        card.innerHTML = `
+        <i class="fas fa-quote-left"></i>
+        <p>${item.message}</p>
+        <div class="client">
+            <img src="${item.image}" alt="${item.name}">
+            <div>
+            <h3>${item.name}</h3>
+            <p>${item.title}</p>
+            </div>
+        </div>
+        `;
+        container.appendChild(card);
+
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (index === 0) dot.classList.add("active");
+        dot.dataset.index = index;
+        pagination.appendChild(dot);
+    });
+
+    initPagination();
+}
+
+function initPagination() {
+    const cards = document.querySelectorAll(".testimonial-card");
+    const dots = document.querySelectorAll(".dot");
+
+    dots.forEach(dot => {
+        dot.addEventListener("click", () => {
+            const index = dot.dataset.index;
+
+            cards.forEach(c => c.classList.remove("active"));
+            dots.forEach(d => d.classList.remove("active"));
+
+
+            cards[index].classList.add("active");
+            dots[index].classList.add("active");
+        });
+    });
+}
+
+
