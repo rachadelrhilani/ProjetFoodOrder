@@ -93,23 +93,27 @@
                     style="border:0;" allowfullscreen loading="lazy">
                 </iframe>
                 <form class="space-y-4">
-                    <label for="name" class="cach">Enter your Name</label>
-                    <input id="name" type="text" placeholder="Enter your Name"
-                        class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
-
-                    <label for="email" class="cach">Enter your Email</label>
-                    <input id="email" type="email" placeholder="Enter your Email"
-                        class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
-
-                    <label for="phone" class="cach">Phone</label>
-                    <input id="phone" type="tel" placeholder="Phone"
-                        class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
-
-                    <label for="message" class="cach">Message</label>
-                    <textarea id="message" placeholder="Message" rows="8"
-                        class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400 resize-none">
+                    <div>
+                        <label for="name" class="cach">Enter your Name</label>
+                        <input id="name" type="text" placeholder="Enter your Name"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
+                    </div>
+                    <div>
+                        <label for="email" class="cach">Enter your Email</label>
+                        <input id="email" type="email" placeholder="Enter your Email"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
+                    </div>
+                    <div>
+                        <label for="phone" class="cach">Phone</label>
+                        <input id="phone" type="tel" placeholder="Phone"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
+                    </div>
+                    <div>
+                        <label for="message" class="cach">Message</label>
+                        <textarea id="message" placeholder="Message" rows="8"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400 resize-none">
                     </textarea>
-
+                    </div>
                     <button type="submit"
                         class="w-full bg-yellow-400 text-white font-bold py-4 rounded hover:bg-yellow-500">
                         SEND MESSAGE
@@ -119,6 +123,60 @@
         </section>
     </main>
 
+    <section class="faq py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="flex justify-center items-center gap-4 mb-3">
+                    <div class="w-12 h-0.5 bg-yellow-400"></div>
+                    <h4 class="text-yellow-400 text-3xl italic font-medium" style="font-family:'Brush Script MT'">FAQ</h4>
+                    <div class="w-12 h-0.5 bg-yellow-400"></div>
+                </div>
+                <p class="text-4xl font-bold text-gray-900">Questions Fréquentes</p>
+            </div>
+            <div class="space-y-4">
+            
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Quels sont vos horaires d'ouverture?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Nous sommes ouverts du lundi au samedi de 9h à 21h, et le dimanche de 10h à 20h.
+                    </div>
+                </div>
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Faites-vous la livraison à domicile?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Oui, nous livrons dans un rayon de 10 km autour du restaurant. Commandez via notre site ou par
+                        téléphone.
+                    </div>
+                </div>
+                
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Acceptez-vous les reservations?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Oui, vous pouvez réserver une table en nous appelant au +223 442-2777 ou via le formulaire de
+                        contact.
+                    </div>
+                </div>
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Proposez-vous des menus vegetariens?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Absolument! Nous avons une large sélection de plats végétariens et végans sur notre menu.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="bg-[#0F172A] text-gray-300 py-12 px-6">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
 
