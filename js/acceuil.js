@@ -77,7 +77,7 @@ fetch("/data/menu.json")
 
 /////////// pagination using javascript //////////////////
 
-etch("/data/testimonials.json")
+fetch("/data/testimonials.json")
     .then(res => res.json())
     .then(data => {
         renderTestimonials(data);
