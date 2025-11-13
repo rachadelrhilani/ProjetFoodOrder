@@ -13,6 +13,7 @@ const loadData = async () => {
   const meals = {
     Breakfast: data.filter(m => m.mealType === "Breakfast"),
     Lunch: data.filter(m => m.mealType === "Lunch"),
+    Dinner: data.filter(m => m.mealType === "Dinner")
   };
 
   // Render helper (works for both)
@@ -33,8 +34,8 @@ const loadData = async () => {
           </div>
           <p class="font-extrabold text-yellow-500 mt-5 text-2xl">$${meal.price}</p>
         </div>
-      `;
-    };
+        `;
+      };
 
     rightBtn.addEventListener('click', () => {
       index = (index + 1) % meals[type].length;
@@ -51,6 +52,7 @@ const loadData = async () => {
 
   setupMealSection("Breakfast");
   setupMealSection("Lunch");
+  setupMealSection("Dinner")
 };
 
 loadData();
