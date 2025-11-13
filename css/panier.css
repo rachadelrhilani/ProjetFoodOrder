@@ -1,0 +1,212 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  font-size: 16px;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  color: #0f172b;
+  background: #0f172b;
+  width: 90%;
+}
+.Z{
+  display: none;
+  justify-content: center;align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #0005;
+  position: fixed;
+  z-index: 11;
+}
+.panier-info {
+  h1 {
+    font-size: 40px;
+  }
+}
+.panier-prix {
+  background: #fea11655;
+  backdrop-filter: blur(100px);
+}
+.panier i {
+  color: #fea116;
+  font-size: 40px;
+}
+.panier-plat {
+  width: 98%;
+  margin: 8px;
+  input {
+    background: #0f172b;
+    color: #fea116;
+    width: 60px;
+  }
+  select,
+  option {
+    background: #0f172b;
+    color: #fea116;
+    width: 60px;
+  }
+  label {
+    color: #fea116;
+  }
+}
+
+.panier-plat img {
+  width: 80px;
+  height: 80px;
+}
+.panier {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  height: 500px;
+  background: white;
+  /*  */
+  /*  */
+}
+.panier-prix {
+  height: 100%;
+}
+#commander {
+  background: #0f172b;
+  color: #fea116;
+  border: solid 1px #0f172b;
+  transition: 0.5s;
+}
+#commander:hover {
+  background: #fea116;
+  color: #0f172b;
+  border: solid 1px #0f172b;
+}
+.panier-plat img {
+  border: solid 1px;
+}
+.pm{
+  display: flex;
+}
+
+/* Paiment */
+.paiment {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  background: #fff;
+}
+.paiment h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.paiment input {
+  border: #888 1px solid;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.paiment input::placeholder {
+  color: #bbb;
+  font-size: 1rem;
+}
+.paiment * {
+  color: #000;
+  font-weight: normal;
+}
+.paiment i {
+  color: #fea116;
+  font-size: 40px;
+  font-weight: bold;
+}
+.c-achat {
+  background-color: #fea116;
+  color: #0f172b;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+.adress {
+  width: 80%;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  gap: 10px;
+}
+.address input {
+  width: 100%;
+}
+.adress input:nth-child(1),
+.adress input:nth-child(2),
+.adress input:nth-child(5) {
+  grid-column: 1 / 3;
+}
+.adress input:nth-child(3) {
+  grid-column: 1/2;
+}
+.adress input:nth-child(4) {
+  grid-column: 2/3;
+}
+/* mobile */
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+  .panier {
+    top :5%;
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 0;
+    align-items: center;
+  }
+  .panier-prix {
+    width: 100%;
+    border-radius: 0;
+  }
+  .panier-plat {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .panier-plat img {
+    height: 160px;
+    width: 160px;
+  }
+  .panier-prix {
+    height: 300px;
+    background: #fea116;
+    border: none;
+  }
+  .pm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .plat-count {
+    width: 300px;
+  }
+  .pc {
+    width: 100%;
+  }
+  /* paiement */
+  .paiment input {
+    border: #555 1px solid;
+    width: 45%;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .paiment h2 {
+    font-size: 3rem;
+  }
+  .in-email {
+    width: 100%;
+  }
+  .adress {
+    width: 100%;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 10px;
+  }
+  .adress input {
+    width: 100%;
+  }
+}
