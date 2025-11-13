@@ -1,8 +1,8 @@
-
-
 const pay = document.querySelector(".paiment");
 const panier = document.querySelector(".panier");
 const Z = document.querySelector(".Z");
+//total
+let total = 0;
 
 function toPay() {
   pay.style.display = "flex";
@@ -20,9 +20,10 @@ Z.addEventListener("click", () => {
   pay.style.display = "none";
 });
 
+//propagation
 panier.addEventListener("click", (e) => e.stopPropagation());
 pay.addEventListener("click", (e) => e.stopPropagation());
-
+//
 const platContainer = document.querySelector(".p-content");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -30,13 +31,16 @@ function creePlat() {
   platContainer.innerHTML = "";
   cart.forEach((item, i) => {
     const plat = document.createElement("div");
-    plat.className = "panier-plat flex justify-between items-center w-4/4 p-3.5";
+    plat.className =
+      "panier-plat flex justify-between items-center w-4/4 p-3.5";
     plat.innerHTML = `
       <img class="plat-image" src="${item.image}" alt="plat" />
       <h2 class="text-3xl plat-title">${item.name}</h2>
       <div class="pm">
         <button class="text-4xl decrease">-</button>
-        <input readonly type="number" min="1" class="text-2xl plat-count" value="${item.quantity || 1}" />
+        <input readonly type="number" min="1" class="text-2xl plat-count" value="${
+          item.quantity
+        }" />
         <button class="text-4xl increase">+</button>
       </div>
       <select class="text-3xl plat-size">
@@ -45,7 +49,9 @@ function creePlat() {
         <option value="XL">XL</option>
       </select>
       <div class="pc flex justify-between w-1/4">
-        <label class="text-3xl price-tag">$${((item.quantity || 1) * parseFloat(item.price)).toFixed(2)}</label>
+        <label class="text-3xl price-tag">${(
+          item.quantity * parseFloat(item.price)
+        ).toFixed(2)}</label>
         <button class="text-3xl cancel">X</button>
       </div>
     `;
@@ -58,12 +64,14 @@ function creePlat() {
     const sizeSelect = plat.querySelector(".plat-size");
     const cancelBtn = plat.querySelector(".cancel");
 
-    count.value = item.quantity || 1;
-    sizeSelect.value = item.size || "S";
+    count.value = item.quantity;
+    sizeSelect.value = item.size;
 
     inc.addEventListener("click", () => {
       count.value = parseInt(count.value) + 1;
-      price.textContent = `$${(parseInt(count.value) * parseFloat(item.price)).toFixed(2)}`;
+      price.textContent = `${(
+        parseInt(count.value) * parseFloat(item.price)
+      ).toFixed(2)}`;
       cart[i].quantity = parseInt(count.value);
       localStorage.setItem("cart", JSON.stringify(cart));
     });
@@ -71,7 +79,9 @@ function creePlat() {
     dec.addEventListener("click", () => {
       if (parseInt(count.value) > 1) {
         count.value = parseInt(count.value) - 1;
-        price.textContent = `$${(parseInt(count.value) * parseFloat(item.price)).toFixed(2)}`;
+        price.textContent = `${(
+          parseInt(count.value) * parseFloat(item.price)
+        ).toFixed(2)}`;
         cart[i].quantity = parseInt(count.value);
         localStorage.setItem("cart", JSON.stringify(cart));
       }
@@ -87,7 +97,67 @@ function creePlat() {
       localStorage.setItem("cart", JSON.stringify(cart));
       creePlat();
     });
+    total += parseFloat(price.textContent);
+console.log(total);
+
+const planNum = document.querySelector(".plat-num");
+const totalPrix = document.querySelector(".total-prix");
+
+planNum.innerHTML = `${cart.length} plats `;
+totalPrix.innerHTML = `${parseFloat(total).toFixed(2)} Dhs`
   });
 }
-
 creePlat();
+
+//REGEX
+
+const btnConfirmer = document.querySelector(".c-achat");
+
+btnConfirmer.addEventListener("click", () => {
+  const nom = document.querySelector(".pay-nom");
+  const prenom = document.querySelector(".pay-prenom");
+  const email = document.querySelector(".in-email");
+  const l1 = document.querySelector(".pay-l1");
+  const ville = document.querySelector(".pay-v");
+  const region = document.querySelector(".pay-r");
+  const postal = document.querySelector(".pay-pos");
+
+  if (nom.value.trim() === "") {
+    alert("Le champ Nom est obligatoire.");
+    return;
+  }
+
+  if (prenom.value.trim() === "") {
+    alert("Le champ Prenom est obligatoire.");
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email.value)) {
+    alert("Veuillez entrer une adresse email valide.");
+    return;
+  }
+
+  if (l1.value== "") {
+    alert("igne 1 est obligatoire.");
+    return;
+  }
+
+  if (ville.value== "") {
+    alert("La ville est obligatoire.");
+    return;
+  }
+
+  if (region.value== "") {
+    alert("La région est obligatoire.");
+    return;
+  }
+
+  const postalRegex = /^[0-9]{4,6}$/;
+  if (!postalRegex.test(postal.value)) {
+    alert("Le code postal doit contenir uniquement des chiffres (4 à 6 chiffres).");
+    return;
+  }
+
+  alert("Prener botre recu");
+});
