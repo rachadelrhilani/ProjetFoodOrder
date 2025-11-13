@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/Contact.css">
-
 </head>
 
 <body>
@@ -17,9 +16,9 @@
             <h1 class="text-lg font-bold text-yellow-500"><i class="fa fa-utensils me-3"></i>Restoran</h1>
         </div>
         <nav class="hidden md:flex items-center space-x-6 text-sm">
-            <a href="#" class="hover:text-yellow-400">Accueil</a>
-            <a href="#" class="hover:text-yellow-400">Menu</a>
-            <a href="#" class="hover:text-yellow-400">Contact</a>
+            <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
+            <a href="../index.html" class="hover:text-yellow-400">Menu</a>
+            <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
             <button
                 class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
                 <span>Pannier</span>
@@ -40,8 +39,7 @@
             <h1 class="text-6xl font-bold mb-6">Contact Us</h1>
             <p class="text-gray-300 text-base mb-8 font-medium leading-relaxed">
                 Far far away, behind the word mountains, far from the countries Vokalia<br>
-                and Consonantia, there live the blind texts.
-            </p>
+                and Consonantia, there live the blind texts.</p>
 
             <ul class="flex gap-3 text-sm justify-center items-center">
                 <li><a href="../index.html" class="text-yellow-500 hover:text-yellow-400 font-medium">ACCUEIL</a></li>
@@ -52,93 +50,36 @@
             </ul>
         </div>
     </aside>
-
-    <main class="py-16">
-        <section class="ContactUs max-w-6xl mx-auto px-4">
-
-            <div class="text-center mb-16">
-                <div class="flex items-center justify-center gap-4 mb-3">
-                    <div class="w-12 h-0.5 bg-yellow-400"></div>
-                    <h4 class="text-yellow-400 text-3xl italic font-medium"
-                        style="font-family: 'Brush Script MT', cursive;">
-                        Contact Us</h4>
-                    <div class="w-12 h-0.5 bg-yellow-400"></div>
-                </div>
-                <p class="text-5xl font-bold text-gray-900">Contact For Any Query</p>
+    <main>
+        <section class="infos">
+            <div class="titre">
+                <h4>Contact Us</h4>
+                <p>Contact For Any Query</p>
             </div>
-
-            <div class="Cartes grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                <div class="booking flex flex-col">
-                    <div class="flex items-center justify-center gap-3 mb-6">
-                        <div class="w-8 h-0.5 bg-yellow-400"></div>
-                        <h4 class="text-yellow-400 text-3xl italic whitespace-nowrap font-medium"
-                            style="font-family: 'Brush Script MT', cursive; ">Booking</h4>
-                        <div class="w-8 h-0.5 bg-yellow-400"></div>
-                    </div>
-                    <div class="carte bg-gray-900 text-gray-400 rounded-2xl p-8  flex-1 flex flex-col justify-center">
-                        <div class="flex items-start gap-4 mb-6">
-                            <svg aria-label="une icone d'une location"
-                                class="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <p class="text-lg leading-relaxed font-medium">Av. Paz Soldán 290, San Isidro, Lima 27 -
-                                Peru</p>
-                        </div>
-                        <div class="flex items-center gap-4 mb-6">
-                            <svg aria-label="une icone d'un numero de tele"
-                                class="w-5 h-5 text-yellow-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                            </svg>
-                            <p class="text-lg font-medium">+511 442-2777</p>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <svg aria-label="une icone d'un email" class="w-5 h-5 text-yellow-400 flex-shrink-0"
-                                fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                            </svg>
-                            <p class="text-lg font-medium">info@example.com</p>
-                        </div>
+            <div class="cards">
+                <div class="booking">
+                    <h4>Booking</h4>
+                    <div class="info">
+                        <p>Av. Paz Soldán 290, San Isidro, Lima 27 - Peru</p>
+                        <p>+511 442-2777</p>
+                        <p>info@gmail.com</p>
                     </div>
                 </div>
-
-
-                <div class="general flex flex-col">
-                    <div class="flex items-center justify-center gap-3 mb-6">
-                        <div class="w-8 h-0.5 bg-yellow-400"></div>
-                        <h4 class="text-yellow-400 text-3xl italic whitespace-nowrap font-medium"
-                            style="font-family: 'Brush Script MT', cursive;">General</h4>
-                        <div class="w-8 h-0.5 bg-yellow-400"></div>
-                    </div>
-                    <div class="carte bg-gray-900 text-gray-400 rounded-2xl p-8  flex-1 flex flex-col justify-center">
-                        <h3 class="text-yellow-400 text-xl font-semibold mb-6 text-center">Hours of service</h3>
-                        <div class="days mb-6">
-                            <h4 class="text-gray-300 text-lg font-medium mb-2">Monday to Saturday</h4>
-                            <p class="text-lg leading-relaxed font-medium">1:00 pm - 3:00 pm and<br>7:00 pm - 11:00 pm
-                            </p>
-                        </div>
-                        <div class="sunday">
-                            <h4 class="text-gray-300 text-lg font-medium mb-2">Sunday</h4>
-                            <p class="text-lg font-medium">12:30 pm - 3:30 pm</p>
-                        </div>
+                <div class="general">
+                    <h4>General</h4>
+                    <div class="info">
+                        <h3>Hours of Service</h3>
+                        <h4>Monday to Saturday</h4>
+                        <p>1:00 pm - 3:00 pm and 7:00 pm - 11:00 pm</p>
+                        <h4>Sunday</h4>
+                        <p>12:30 pm - 3:30 pm</p>
                     </div>
                 </div>
-
-                <div class="technical flex flex-col">
-                    <div class="flex items-center justify-center gap-3 mb-6">
-                        <div class="w-8 h-0.5 bg-yellow-400"></div>
-                        <h4 class="text-yellow-400 text-3xl italic whitespace-nowrap font-medium"
-                            style="font-family: 'Brush Script MT', cursive;">Technical</h4>
-                        <div class="w-8 h-0.5 bg-yellow-400"></div>
-                    </div>
-                    <div class="carte bg-gray-900 text-gray-400 rounded-2xl p-8 flex-1 flex flex-col justify-center">
-                        <h3 class="text-yellow-400 text-xl font-semibold mb-6 text-center">Telephone support</h3>
-                        <p class="text-lg leading-relaxed font-medium">Monday to Saturday from 9:00 am to 9:00 pm</p>
+                <div class="technical">
+                    <h4>Technical</h4>
+                    <div class="info">
+                        <h3>Telephone support</h3>
+                        <p>Monday to Saturday from 9:00 am to 9:00 pm</p>
                     </div>
                 </div>
             </div>
@@ -158,20 +99,20 @@
                         <form action="" class="space-y-4">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
-                                    <label for="name user" class="sr-only">Your Name</label>
-                                    <input id="name" type="text" placeholder="Your Name"
+                                    <label for="name user" class="sr-only">Enter your Name</label>
+                                    <input id="name" type="text" placeholder="Enter your Name"
                                         class="w-full px-4 py-3 border border-gray-300 rounded font-medium focus:outline-none focus:border-yellow-400">
                                 </div>
                                 <div>
-                                    <label for="email" class="sr-only">Your Email</label>
-                                    <input id="email" type="email" placeholder="Your Email"
+                                    <label for="email" class="sr-only">Enter your Email</label>
+                                    <input id="email" type="email" placeholder="Enter your Email"
                                         class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none font-medium focus:border-yellow-400">
                                 </div>
                             </div>
 
                             <div>
-                                <label for="subject" class="sr-only">Subject</label>
-                                <input id="subject" type="text" placeholder="Subject"
+                                <label for="phone" class="sr-only">Phone</label>
+                                <input id="phone" type="tel" placeholder="phone"
                                     class="w-full px-4 py-3 border border-gray-300 font-medium rounded focus:outline-none focus:border-yellow-400">
                             </div>
                             <div>
@@ -185,7 +126,6 @@
                             </button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -199,9 +139,9 @@
                     class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
                     Company</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-yellow-400">Accueil</a></li>
-                    <li><a href="#" class="hover:text-yellow-400">Menu</a></li>
-                    <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+                    <li><a href="../index.html" class="hover:text-yellow-400">Accueil</a></li>
+                    <li><a href="../index.html" class="hover:text-yellow-400">Menu</a></li>
+                    <li><a href="Contact.html" class="hover:text-yellow-400">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -211,7 +151,7 @@
                     Contact</h4>
                 <p class="text-sm">123 Street, New York, USA</p>
                 <p class="text-sm mt-1">+012 345 67890</p>
-                <p class="text-sm mt-1">info@example.com</p>
+                <p class="text-sm mt-1">info@gmail.com</p>
                 <div class="flex space-x-3 mt-4">
                     <a href="#"><img src="../images/facebook.png" alt="facebook"
                             class="w-6 h-6 hover:scale-110 transition-transform" /></a>
@@ -245,8 +185,6 @@
                 </div>
             </div>
         </div>
-
-
         <div
             class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>
@@ -254,9 +192,9 @@
                 <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
             </p>
             <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-yellow-400">Accueil</a>
-                <a href="#" class="hover:text-yellow-400">Menu</a>
-                <a href="#" class="hover:text-yellow-400">Contact Us</a>
+                <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
+                <a href="../index.html" class="hover:text-yellow-400">Menu</a>
+                <a href="Contact.html" class="hover:text-yellow-400">Contact Us</a>
             </div>
 
         </div>
@@ -267,8 +205,8 @@
                 <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
             </p>
         </div>
-
     </footer>
+    <script src="../js/Contact.js"></script>
 </body>
 
 </html>

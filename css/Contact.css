@@ -11,7 +11,6 @@ header{
     z-index: 2;
 }
 
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -22,4 +21,103 @@ header{
     clip: rect(0,0,0,0);
     white-space: nowrap;
     border-width: 0;
+}
+
+.infos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+.titre {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: Arial;
+}
+.titre h4 {
+    color: #facc15;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Brush Script MT';
+    margin-bottom: 10px;
+}
+.titre p {
+    font-size: 45px;
+    font-weight: bold;
+    color: #111;
+    margin: 0;
+}.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.booking h4,
+.general h4,
+.technical h4 {
+    color: #facc15;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Brush Script MT';
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info {
+    background-color: #1a202c;
+    color: #aaa;
+    border-radius: 20px;
+    padding: 35px;
+    min-height: 300px;
+}
+.booking .info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+.booking .info i {
+    color: #facc15;
+    font-size: 22px;
+    margin-top: 3px;
+}
+.general .info h3 {
+    color: #facc15;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.general .info h4 {
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-style: normal;
+    text-align: left;
+}
+
+.general .info p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+.technical .info h3 {
+    color: #facc15;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.technical .info p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .titre p {
+        font-size: 30px;
+    }
 }
