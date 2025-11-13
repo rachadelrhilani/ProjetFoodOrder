@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/Contact.css">
+</head>
+
+<body>
+    <header class="bg-[#0F172A] text-white flex items-center justify-between px-6 py-4">
+        <div class="flex items-center space-x-2">
+            <h1 class="text-lg font-bold text-yellow-500"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+        </div>
+        <nav class="hidden md:flex items-center space-x-6 text-sm">
+            <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
+            <a href="../index.html" class="hover:text-yellow-400">Menu</a>
+            <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
+            <button
+                class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
+                <span>Pannier</span>
+                <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" />
+            </button>
+        </nav>
+
+        <button id="menu-btn" class="md:hidden">
+            <img src="/images/menu-logo.png" alt="menu" class="w-8 h-8" />
+        </button>
+    </header>
+
+    <aside class="relative h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+        style="background-image: url('../images/Background.png');" role="img"
+        aria-label="background d'un restaurant avec un repas delicieu">
+
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-6xl font-bold mb-6">Contact Us</h1>
+            <p class="text-gray-300 text-base mb-8 font-medium leading-relaxed">
+                Far far away, behind the word mountains, far from the countries Vokalia<br>
+                and Consonantia, there live the blind texts.</p>
+
+            <ul class="flex gap-3 text-sm justify-center items-center">
+                <li><a href="../index.html" class="text-yellow-500 hover:text-yellow-400 font-medium">ACCUEIL</a></li>
+                <li><span class="text-gray-400">/</span></li>
+                <li><a href="../index.html" class="text-yellow-500 hover:text-yellow-400 font-medium">MENU</a></li>
+                <li><span class="text-gray-400">/</span></li>
+                <li id="courant"><a href="../pages/Contact.html" class="text-white font-medium">CONTACT</a></li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <section class="infos">
+            <div class="titre">
+                <h4>Contact Us</h4>
+                <p>Contact For Any Query</p>
+            </div>
+            <div class="cards">
+                <div class="booking">
+                    <h4>Booking</h4>
+                    <div class="info">
+                        <p>Av. Paz Soldán 290, San Isidro, Lima 27 - Peru</p>
+                        <p>+511 442-2777</p>
+                        <p>info@gmail.com</p>
+                    </div>
+                </div>
+                <div class="general">
+                    <h4>General</h4>
+                    <div class="info">
+                        <h3>Hours of Service</h3>
+                        <h4>Monday to Saturday</h4>
+                        <p>1:00 pm - 3:00 pm and 7:00 pm - 11:00 pm</p>
+                        <h4>Sunday</h4>
+                        <p>12:30 pm - 3:30 pm</p>
+                    </div>
+                </div>
+                <div class="technical">
+                    <h4>Technical</h4>
+                    <div class="info">
+                        <h3>Telephone support</h3>
+                        <p>Monday to Saturday from 9:00 am to 9:00 pm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class=" mx-auto px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="map rounded-lg overflow-hidden shadow-lg h-full min-h-[400px]">
+                        <iframe title="location map du restaurant"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726251.2952794593!2d-11.565707406250025!3d32.323013100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac21f1ff9e80d5%3A0x9ee49d3b2705c59d!2zTCfDrmxvdCBDaMOidGFpbg!5e0!3m2!1sfr!2sma!4v1762720692590!5m2!1sfr!2sma"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="form-container">
+                        <form action="" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name user" class="sr-only">Enter your Name</label>
+                                    <input id="name" type="text" placeholder="Enter your Name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded font-medium focus:outline-none focus:border-yellow-400">
+                                </div>
+                                <div>
+                                    <label for="email" class="sr-only">Enter your Email</label>
+                                    <input id="email" type="email" placeholder="Enter your Email"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none font-medium focus:border-yellow-400">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="phone" class="sr-only">Phone</label>
+                                <input id="phone" type="tel" placeholder="phone"
+                                    class="w-full px-4 py-3 border border-gray-300 font-medium rounded focus:outline-none focus:border-yellow-400">
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only ">Message</label>
+                                <textarea id="message" placeholder="Message" rows="8"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded font-medium focus:outline-none focus:border-yellow-400 resize-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-yellow-400 text-white font-bold py-4 rounded hover:bg-yellow-500 transition duration-300">
+                                SEND MESSAGE
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#0F172A] text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+
+            <div>
+                <h4
+                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+                    Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="../index.html" class="hover:text-yellow-400">Accueil</a></li>
+                    <li><a href="../index.html" class="hover:text-yellow-400">Menu</a></li>
+                    <li><a href="Contact.html" class="hover:text-yellow-400">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4
+                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+                    Contact</h4>
+                <p class="text-sm">123 Street, New York, USA</p>
+                <p class="text-sm mt-1">+012 345 67890</p>
+                <p class="text-sm mt-1">info@gmail.com</p>
+                <div class="flex space-x-3 mt-4">
+                    <a href="#"><img src="../images/facebook.png" alt="facebook"
+                            class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+                    <a href="#"><img src="../images/twitter.png" alt="twitter"
+                            class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+                    <a href="#"><img src="../images/youtube.png" alt="instagram"
+                            class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+                </div>
+            </div>
+
+            <div>
+                <h4
+                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+                    Opening</h4>
+                <p class="text-sm">Monday - Saturday<br /><span class="text-gray-400">09AM - 09PM</span></p>
+                <p class="text-sm mt-3">Sunday<br /><span class="text-gray-400">10AM - 08PM</span></p>
+            </div>
+
+            <div>
+                <h4
+                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+                    Newsletter</h4>
+                <p class="text-sm mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="relative max-w-xs">
+                    <input type="email" placeholder="Your email"
+                        class="w-full rounded-md border border-gray-300 px-3 py-2 pr-20 text-gray-700 focus:outline-none" />
+                    <button
+                        class="absolute right-0 top-0 h-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 rounded-r-md">
+                        SIGNUP
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>
+                © <span class="text-yellow-500 font-semibold">FoodOrder</span>, All Rights Reserved. Designed By
+                <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
+            </p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
+                <a href="../index.html" class="hover:text-yellow-400">Menu</a>
+                <a href="Contact.html" class="hover:text-yellow-400">Contact Us</a>
+            </div>
+
+        </div>
+        <div
+            class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>
+                Distributed By
+                <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
+            </p>
+        </div>
+    </footer>
+    <script src="../js/Contact.js"></script>
+</body>
+
+</html>
