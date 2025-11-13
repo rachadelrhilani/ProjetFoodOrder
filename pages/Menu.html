@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+     <header class="bg-[#0F172A] text-white flex items-center justify-between px-6 py-4">
+    <div class="flex items-center space-x-2">
+      <h1 class="text-lg font-bold text-yellow-500"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+    </div>
+    <nav class="hidden md:flex items-center space-x-6 text-sm">
+      <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
+      <a href="#" class="hover:text-yellow-400">Menu</a>
+      <a href="#" class="hover:text-yellow-400">Contact</a>
+      <button id="btn-panier"
+        class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
+        <span>Pannier</span>
+        <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" />
+      </button>
+    </nav>
+
+
+    <button id="menu-btn" class="md:hidden">
+      <img src="/images/menu-logo.png" alt="menu" class="w-8 h-8" />
+    </button>
+  </header>
+
+  <div id="mobile-menu" class="hidden flex flex-col bg-[#0F172A] text-white md:hidden py-4 space-y-3 shadow-lg">
+    <a href="../index.html" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Accueil</a>
+    <a href="#" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Menu</a>
+    <a href="#" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Contact</a>
+    <button id="btn-panier"
+      class="bg-yellow-500 flex hover:bg-yellow-400 text-white ml-6 px-4 py-2 font-semibold w-[120px] space-x-2"><span>Pannier</span>
+      <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" /></button>
+  </div>
+    <header>
+        <nav></nav>
+        <div class="relative h-[24rem] w-full">
+            <img 
+                src="../images/Overlay1+Background.png" 
+                class="h-full w-full object-cover" 
+                alt="Background">
+            <div class="absolute inset-0 bg-slate-950/90 opacity-90"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                <h2 class="text-white text-4x1 md:text-5xl font-extrabold mb-4">Food Menu</h2>
+                <div class="flex flex-wrap justify-center gap-2 mb-6 text-yellow-600">
+                    <p>accueil /</p>
+                    <p>contact /</p>
+                    <p class="text-white">Menu</p>
+                </div>
+                <input 
+                    type="text" 
+                    placeholder="search"
+                    class="w-full max-w-md bg-blue-950 text-white rounded-3xl py-2 px-6 placeholder:text-white focus:outline-none"></input>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="flex flex-row gap-4 items-center justify-center">
+            <hr class="border-t-2 border-yellow-600 my-3 w-8">
+            <p class="text-yellow-600 font-extrabold">Food Menu</p>
+            <hr class="border-t-2 border-yellow-600 my-3 w-8">
+        </div>
+
+        <h2 class="text-black text-4x1 mt-5 text-center md:text-5xl font-extrabold mb-4">Most Popular Items</h2> 
+        <!-- ------------------------------------- Most Popular Breakfast ---------------------------------- -->
+        
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-row">
+                <img 
+                    src="../images/Symbol.png"
+                    class="h-10 mt-2"
+                    alt="logo">
+                <div class="flex flex-col">
+                    <p>Popular</p>
+                    <p class="font-extrabold">Breakfast</p>
+                </div>            
+            </div>
+            <hr class="border-t-2 border-yellow-600 my-3 w-35">
+        </div>
+        
+        <!-- Breakfast section -->
+        <div class="flex flex-col items-center gap-3 w-full">
+            <!-- card  -->
+            <div id="Breakfast-card" class="flex flex-col items-center justify-center"></div>
+
+            <!-- left and right button's -->
+            <div id="Breakfast-wrap-buttons" class="flex gap-16">
+                <button id="swipLeft" class="cursor-pointer">
+                    <img src="../images/icons8-back-arrow-50.png" alt="">
+                </button>
+                <button id="swipRight" class="cursor-pointer">
+                    <img src="../images/icons8-back-arrow-right-50.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- ------------------------------------- Most Special Launch ---------------------------------- -->
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-row">
+                <img 
+                    src="../images/Symbol.png"
+                    class="h-10 mt-2"
+                    alt="logo">
+                <div class="flex flex-col">
+                    <p>Special</p>
+                    <p class="font-extrabold">Launch</p>
+                </div>            
+            </div>
+            <hr class="border-t-2 border-yellow-600 my-3 w-35">
+        </div>
+
+       
+        <!-- Lunch section -->
+        <div class="flex flex-col items-center gap-3 w-full">
+            <!-- card  -->
+        <div id="Lunch-card" class="flex flex-col items-center justify-center"></div>
+
+        <!-- left and right button's  -->
+        <div id="Lunch-wrap-buttons" class="flex gap-16">
+            <button id="swipLeft" class="cursor-pointer">
+                <img src="../images/icons8-back-arrow-50.png" alt="">
+            </button>
+            <button id="swipRight" class="cursor-pointer">
+                <img src="../images/icons8-back-arrow-right-50.png" alt="">
+            </button>
+        </div>
+        </div>
+
+        <!-- ------------------------------------- Most Lovely Dinner ---------------------------------- -->
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-row">
+                <img 
+                    src="../images/Dinner.png"
+                    class="h-10 mt-2"
+                    alt="logo">
+                <div class="flex flex-col">
+                    <p>Lovely</p>
+                    <p class="font-extrabold">Dinner</p>
+                </div>            
+            </div>
+            <hr class="border-t-2 border-yellow-600 my-3 w-35">
+        </div>
+
+        <div class="flex flex-col items-center gap-3 w-full">
+            <!-- card  -->
+            <div id="Dinner-card" class="flex flex-col items-center justify-center"></div>
+
+            <!-- left and right button's  -->
+            <div id="Dinner-wrap-buttons" class="flex gap-16">
+                <button id="swipLeft" class="cursor-pointer">
+                    <img src="../images/icons8-back-arrow-50.png" alt="">
+                </button>
+                <button id="swipRight" class="cursor-pointer">
+                    <img src="../images/icons8-back-arrow-right-50.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <h2 class="text-black text-4x1 mt-5 text-center md:text-5xl font-extrabold mb-4">Plats Disponibles</h2> 
+    </section>
+      <footer class="bg-[#0F172A] text-gray-300 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-yellow-400">Accueil</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Menu</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Contact</h4>
+        <p class="text-sm">123 Street, New York, USA</p>
+        <p class="text-sm mt-1">+012 345 67890</p>
+        <p class="text-sm mt-1">info@example.com</p>
+        <div class="flex space-x-3 mt-4">
+          <a href="#"><img src="../images/facebook.png" alt="facebook"
+              class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+          <a href="#"><img src="../images/twitter.png" alt="twitter"
+              class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+          <a href="#"><img src="../images/youtube.png" alt="instagram"
+              class="w-6 h-6 hover:scale-110 transition-transform" /></a>
+        </div>
+      </div>
+
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Opening</h4>
+        <p class="text-sm">Monday - Saturday<br /><span class="text-gray-400">09AM - 09PM</span></p>
+        <p class="text-sm mt-3">Sunday<br /><span class="text-gray-400">10AM - 08PM</span></p>
+      </div>
+
+      <div>
+        <h4
+          class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
+          Newsletter</h4>
+        <p class="text-sm mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+        <div class="relative max-w-xs">
+          <input type="email" placeholder="Your email"
+            class="w-full rounded-md border border-gray-300 px-3 py-2 pr-20 text-gray-700 focus:outline-none" />
+          <button
+            class="absolute right-0 top-0 h-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 rounded-r-md">
+            SIGNUP
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <p>
+        © <span class="text-yellow-500 font-semibold">FoodOrder</span>, All Rights Reserved. Designed By
+        <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
+      </p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-yellow-400">Accueil</a>
+        <a href="#" class="hover:text-yellow-400">Menu</a>
+        <a href="#" class="hover:text-yellow-400">Contact Us</a>
+      </div>
+
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <p>
+        Distributed By
+        <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
+      </p>
+    </div>
+
+  </footer>
+    <script src="../js/Menu.js"></script>
+</body>
+</html>
