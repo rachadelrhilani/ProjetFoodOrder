@@ -18,9 +18,10 @@
     </div>
     <nav class="hidden md:flex items-center space-x-6 text-sm">
       <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
-      <a href="#" class="hover:text-yellow-400">Menu</a>
-      <a href="#" class="hover:text-yellow-400">Contact</a>
-      <button onclick="panierOn()" id="btn-panier"
+
+      <a href="Menu.html" class="hover:text-yellow-400">Menu</a>
+      <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
+      <button id="btn-panier"
         class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
         <span>Pannier</span>
         <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" />
@@ -57,9 +58,10 @@
                     <p class="text-white">Menu</p>
                 </div>
                 <input 
-                    type="text" 
-                    placeholder="search"
-                    class="w-full max-w-md bg-blue-950 text-white rounded-3xl py-2 px-6 placeholder:text-white focus:outline-none"></input>
+                  id="search-input"
+                  type="text" 
+                  placeholder="search"
+                  class="w-full max-w-md bg-blue-950 text-white rounded-3xl py-2 px-6 placeholder:text-white focus:outline-none">
             </div>
         </div>
     </header>
@@ -166,7 +168,12 @@
             </div>
         </div>
 
+        <!-- disponible plates -->
         <h2 class="text-black text-4x1 mt-5 text-center md:text-5xl font-extrabold mb-4">Plats Disponibles</h2> 
+
+        <!-- card  -->
+        <div id="disponible-card" class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4"></div>
+
     </section>
       <footer class="bg-[#0F172A] text-gray-300 py-12 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">

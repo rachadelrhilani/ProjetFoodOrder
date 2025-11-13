@@ -37,8 +37,8 @@
 
     <div id="mobile-menu" class="hidden flex flex-col bg-[#0F172A] text-white md:hidden py-4 space-y-3 shadow-lg">
         <a href="../index.html" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Accueil</a>
-        <a href="#" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Menu</a>
-        <a href="#" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Contact</a>
+        <a href="Menu.html" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Menu</a>
+        <a href="Contact.html" class="hover:text-yellow-400 ml-6 w-[250px] border-b-2 border-yellow-500">Contact</a>
         <button id="btn-panier"
             class="bg-yellow-500 flex hover:bg-yellow-400 text-white ml-6 px-4 py-2 font-semibold w-[120px] space-x-2"><span>Pannier</span>
             <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" /></button>
@@ -99,51 +99,97 @@
         </section>
 
         <section class="py-16">
-            <div class=" mx-auto px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="map rounded-lg overflow-hidden shadow-lg h-full min-h-[400px]">
-                        <iframe title="location map du restaurant"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726251.2952794593!2d-11.565707406250025!3d32.323013100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac21f1ff9e80d5%3A0x9ee49d3b2705c59d!2zTCfDrmxvdCBDaMOidGFpbg!5e0!3m2!1sfr!2sma!4v1762720692590!5m2!1sfr!2sma"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                    <div class="form-container">
-                        <form action="" class="space-y-4">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <label for="name user" class="sr-only">Enter your Name</label>
-                                    <input id="name" type="text" placeholder="Enter your Name"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded font-medium focus:outline-none focus:border-yellow-400">
-                                </div>
-                                <div>
-                                    <label for="email" class="sr-only">Enter your Email</label>
-                                    <input id="email" type="email" placeholder="Enter your Email"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none font-medium focus:border-yellow-400">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="phone" class="sr-only">Phone</label>
-                                <input id="phone" type="tel" placeholder="phone"
-                                    class="w-full px-4 py-3 border border-gray-300 font-medium rounded focus:outline-none focus:border-yellow-400">
-                            </div>
-                            <div>
-                                <label for="message" class="sr-only ">Message</label>
-                                <textarea id="message" placeholder="Message" rows="8"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded font-medium focus:outline-none focus:border-yellow-400 resize-none"></textarea>
-                            </div>
-                            <button type="submit"
-                                class="w-full bg-yellow-400 text-white font-bold py-4 rounded hover:bg-yellow-500 transition duration-300">
-                                SEND MESSAGE
-                            </button>
-                        </form>
+                <iframe class="w-full h-full min-h-[400px] rounded-lg shadow-lg" title="location map du restaurant"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726251.2952794593!2d-11.565707406250025!3d32.323013100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac21f1ff9e80d5%3A0x9ee49d3b2705c59d!2zTCfDrmxvdCBDaMOidGFpbg!5e0!3m2!1sfr!2sma!4v1762720692590!5m2!1sfr!2sma"
+                    style="border:0;" allowfullscreen loading="lazy">
+                </iframe>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="cach">Enter your Name</label>
+                        <input id="name" type="text" placeholder="Enter your Name"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
                     </div>
-                </div>
+                    <div>
+                        <label for="email" class="cach">Enter your Email</label>
+                        <input id="email" type="email" placeholder="Enter your Email"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
+                    </div>
+                    <div>
+                        <label for="phone" class="cach">Phone</label>
+                        <input id="phone" type="tel" placeholder="Phone"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400">
+                    </div>
+                    <div>
+                        <label for="message" class="cach">Message</label>
+                        <textarea id="message" placeholder="Message" rows="8"
+                            class="w-full px-4 py-3 font-medium border rounded focus:outline-none focus:border-yellow-400 resize-none">
+                    </textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-yellow-400 text-white font-bold py-4 rounded hover:bg-yellow-500">
+                        SEND MESSAGE
+                    </button>
+                </form>
             </div>
         </section>
     </main>
 
+    <section class="faq py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="flex justify-center items-center gap-4 mb-3">
+                    <div class="w-12 h-0.5 bg-yellow-400"></div>
+                    <h4 class="text-yellow-400 text-3xl italic font-medium" style="font-family:'Brush Script MT'">FAQ</h4>
+                    <div class="w-12 h-0.5 bg-yellow-400"></div>
+                </div>
+                <p class="text-4xl font-bold text-gray-900">Questions Fréquentes</p>
+            </div>
+            <div class="space-y-4">
+            
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Quels sont vos horaires d'ouverture?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Nous sommes ouverts du lundi au samedi de 9h à 21h, et le dimanche de 10h à 20h.
+                    </div>
+                </div>
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Faites-vous la livraison à domicile?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Oui, nous livrons dans un rayon de 10 km autour du restaurant. Commandez via notre site ou par
+                        téléphone.
+                    </div>
+                </div>
+                
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Acceptez-vous les reservations?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Oui, vous pouvez réserver une table en nous appelant au +223 442-2777 ou via le formulaire de
+                        contact.
+                    </div>
+                </div>
+                <div class="question bg-white rounded shadow overflow-hidden">
+                    <button class="qst w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-900">Proposez-vous des menus vegetariens?</span>
+                        <span class="icon text-2xl">+</span>
+                    </button>
+                    <div class="rep hidden px-6 pb-4">
+                        Absolument! Nous avons une large sélection de plats végétariens et végans sur notre menu.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="bg-[#0F172A] text-gray-300 py-12 px-6">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
 
