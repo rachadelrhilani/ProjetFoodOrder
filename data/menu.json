@@ -240,7 +240,7 @@
         "mealType": "Lunch",
         "description": "Pain libanais garni de viande marinée, légumes et sauce blanche.",
         "price": 7.70,
-        "image": "https://example.com/images/chawarma-viande.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "S",
             "M",
