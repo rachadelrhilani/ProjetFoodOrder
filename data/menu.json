@@ -6,7 +6,7 @@
         "mealType": "Lunch",
         "description": "Pizza traditionnelle avec sauce tomate, mozzarella et basilic frais.",
         "price": 8.99,
-        "image": "../images/Overlay1+Background.png",
+        "image": "/images/menu-1.jpg.png",
         "size": [
             "S",
             "M",
@@ -28,7 +28,7 @@
         "mealType": "Lunch",
         "description": "Burger avec steak de bœuf, fromage cheddar, laitue, tomate et sauce maison.",
         "price": 10.50,
-        "image": "https://example.com/images/burger-classique.jpg",
+        "image": "/images/menu-2.jpg.png",
         "size": [
             "Simple",
             "Double"
@@ -42,7 +42,7 @@
         "mealType": "Breakfast",
         "description": "Pâtes italiennes à la crème, lardons, œuf et parmesan.",
         "price": 11.20,
-        "image": "https://example.com/images/spaghetti-carbonara.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "M",
             "L"
@@ -56,7 +56,7 @@
         "mealType": "Lunch",
         "description": "Salade fraîche avec poulet grillé, croûtons, parmesan et sauce César.",
         "price": 7.80,
-        "image": "https://example.com/images/salade-cesar.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "Petite",
             "Grande"
@@ -70,7 +70,7 @@
         "mealType": "Snack",
         "description": "Tortilla garnie de poulet mariné, frites, fromage et sauce blanche.",
         "price": 6.90,
-        "image": "https://example.com/images/tacos-poulet.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "S",
             "M",
@@ -85,7 +85,7 @@
         "mealType": "Dinner",
         "description": "Couscous traditionnel avec légumes, merguez, poulet et agneau.",
         "price": 13.50,
-        "image": "https://example.com/images/couscous-royal.jpg",
+        "image": "/images/menu-4.jpg.png",
         "size": [
             "M",
             "L"
@@ -99,7 +99,7 @@
         "mealType": "Snack",
         "description": "Sandwich garni de thon, œuf dur, salade, tomate et mayonnaise.",
         "price": 5.40,
-        "image": "https://example.com/images/sandwich-thon.jpg",
+        "image": "/images/menu-4.jpg.png",
         "size": [
             "Standard"
         ],
@@ -112,7 +112,7 @@
         "mealType": "Dessert",
         "description": "Crêpe sucrée garnie de Nutella et éclats de noisettes.",
         "price": 4.50,
-        "image": "https://example.com/images/crepe-nutella.jpg",
+        "image": "/images/menu-5.jpg.png",
         "size": [
             "Unique"
         ],
@@ -125,7 +125,7 @@
         "mealType": "Lunch",
         "description": "Pizza fondante au mélange de mozzarella, gorgonzola, emmental et parmesan.",
         "price": 9.80,
-        "image": "https://example.com/images/pizza-4fromages.jpg",
+        "image": "/images/menu-6.jpg.png",
         "size": [
             "S",
             "M",
@@ -141,7 +141,7 @@
         "mealType": "Dinner",
         "description": "Poulet mijoté au citron confit et aux olives vertes.",
         "price": 12.90,
-        "image": "https://example.com/images/tagine-poulet-citron.jpg",
+        "image": "/images/menu-7.jpg.png",
         "size": [
             "M",
             "L"
@@ -155,7 +155,7 @@
         "mealType": "Lunch",
         "description": "Assortiment de sushis variés : saumon, thon, avocat, crevette.",
         "price": 14.20,
-        "image": "https://example.com/images/sushi-mix.jpg",
+        "image": "/images/menu-8.jpg.png",
         "size": [
             "8 pièces",
             "12 pièces",
@@ -170,7 +170,7 @@
         "mealType": "Lunch",
         "description": "Spaghetti à la sauce tomate, viande hachée et herbes aromatiques.",
         "price": 9.60,
-        "image": "https://example.com/images/pates-bolognaise.jpg",
+        "image": "/images/menu-4.jpg.png",
         "size": [
             "M",
             "L"
@@ -184,7 +184,7 @@
         "mealType": "Lunch",
         "description": "Soupe traditionnelle marocaine à base de tomates, lentilles et pois chiches.",
         "price": 5.00,
-        "image": "https://example.com/images/soupe-harira.jpg",
+        "image": "/images/menu-4.jpg.png",
         "size": [
             "Bol",
             "Grande"
@@ -198,7 +198,7 @@
         "mealType": "Breakfast",
         "description": "Cheesecake onctueux avec coulis de fruits rouges et base croquante.",
         "price": 5.90,
-        "image": "https://example.com/images/cheesecake-fruitsrouges.jpg",
+        "image": "/images/menu-4.jpg.png",
         "size": [
             "Part",
             "Grande part"
@@ -209,10 +209,10 @@
         "id": 15,
         "name": "Wrap Poulet Curry",
         "category": "Snack",
-        "mealType": "Snack",
+        "mealType": "Breakfast",
         "description": "Wrap garni de poulet au curry, crudités et sauce légère.",
         "price": 6.20,
-        "image": "https://example.com/images/wrap-poulet-curry.jpg",
+        "image": "/images/menu-4.jpg.png",
         "size": [
             "Standard"
         ],
@@ -225,7 +225,7 @@
         "mealType": "Breakfast",
         "description": "Omelette moelleuse au fromage, servie avec pain et salade.",
         "price": 4.80,
-        "image": "https://example.com/images/omelette-fromage.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "1 œuf",
             "2 œufs",
@@ -255,7 +255,7 @@
         "mealType": "Lunch",
         "description": "Pizza légère avec légumes grillés, olives et fromage.",
         "price": 8.50,
-        "image": "https://example.com/images/pizza-vegetarienne.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "S",
             "M",
@@ -268,10 +268,10 @@
         "id": 19,
         "name": "Tiramisu",
         "category": "Dessert Italien",
-        "mealType": "Dessert",
+        "mealType": "Dinner",
         "description": "Dessert italien au café, mascarpone et cacao.",
         "price": 5.50,
-        "image": "https://example.com/images/tiramisu.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "Part",
             "Grande part"
@@ -285,7 +285,7 @@
         "mealType": "Dinner",
         "description": "Steak de bœuf grillé servi avec frites et sauce au choix.",
         "price": 12.40,
-        "image": "https://example.com/images/steak-frites.jpg",
+        "image": "/images/menu-3.jpg.png",
         "size": [
             "M",
             "L"
