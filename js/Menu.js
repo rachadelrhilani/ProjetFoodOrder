@@ -26,16 +26,24 @@ const loadData = async () => {
     const renderCard = () => {
       const meal = meals[type][index];
       cardContainer.innerHTML = `
-        <div class="flex flex-row gap-5">
-          <img src="${meal.image}" class="w-20 h-20">
-          <div class="mt-3">
-            <p class="font-extrabold text-2xl">${meal.name}</p>
-            <p>${meal.description}</p>
-          </div>
-          <p class="font-extrabold text-yellow-500 mt-5 text-2xl">$${meal.price}</p>
-        </div>
-        `;
-      };
+    <div 
+      class="flex flex-row gap-5 cursor-pointer hover:bg-gray-100 p-4 rounded-lg transition"
+      data-id="${meal.id}"
+    >
+      <img src="${meal.image}" class="w-20 h-20 rounded-lg object-cover">
+      <div class="mt-3">
+        <p class="font-extrabold text-2xl">${meal.name}</p>
+        <p>${meal.description}</p>
+      </div>
+      <p class="font-extrabold text-yellow-500 mt-5 text-2xl">$${meal.price}</p>
+    </div>
+  `;
+
+      const card = cardContainer.querySelector("[data-id]");
+      card.addEventListener("click", () => {
+        window.location.href = `Detailplat.html?id=${meal.id}`;
+      });
+    };
 
     rightBtn.addEventListener('click', () => {
       index = (index + 1) % meals[type].length;

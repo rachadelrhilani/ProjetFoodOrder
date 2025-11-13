@@ -6,12 +6,6 @@
         "message": "This service is amazing! Highly recommend it."
     },
     {
-        "name": "Jane Smith",
-        "title": "Designer",
-        "image": "images/jane.jpg",
-        "message": "Fantastic work, very professional and friendly."
-    },
-    {
         "name": "Ali Ben",
         "title": "Developer",
         "image": "/images/testimonial-3.jpg.png",
@@ -22,11 +16,5 @@
         "title": "Marketing Manager",
         "image": "/images/testimonial-4.jpg.png",
         "message": "Exceptional experience, I am impressed!"
-    },
-    {
-        "name": "Mohamed Karim",
-        "title": "Entrepreneur",
-        "image": "/images/testimonial-4.jpg.png",
-        "message": "Highly skilled team and amazing support."
     }
 ]

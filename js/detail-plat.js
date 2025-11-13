@@ -61,7 +61,8 @@ window.addEventListener("scroll", () => {
   //     popupPaiement.classList.add('hidden');
   //   }
   // });
-
+const params = new URLSearchParams(window.location.search);
+const platId = parseInt(params.get("id"));
 fetch("../data/menu.json")
   .then(response => {
     if (!response.ok) {
@@ -70,7 +71,7 @@ fetch("../data/menu.json")
     return response.json();
   })
   .then(data => {
-    const plat = data.find(item => item.id === 1);
+    const plat = data.find(item => item.id === platId);
     console.log(plat);
     const container = document.getElementById("plat-content");
     if (!plat) {
@@ -94,9 +95,6 @@ fetch("../data/menu.json")
      
     <div class="flex justify-between items-start gap-6">
     
-      <ul class="text-left text-yellow-500 mb-6">
-        ${plat.ingredients.map(ing => `<li>${ing}</li>`).join('')}
-      </ul>
      
       <div class="flex flex-col gap-2">
         
