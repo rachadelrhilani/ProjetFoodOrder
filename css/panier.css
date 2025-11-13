@@ -93,6 +93,7 @@ hr {
   position: fixed;
   z-index: 50;
   background: #fff;
+  padding: 8px;
 }
 .paiment h2 {
   color: #000;

@@ -15,50 +15,52 @@ window.addEventListener("scroll", () => {
   }
 });
 /* pop up panier */
- const btnPanier = document.getElementById('btn-panier');
-  const popupPanier = document.getElementById('popup-panier');
-  const closePanier = document.getElementById('close-panier');
+
+
+//  const btnPanier = document.getElementById('btn-panier');
+//   const popupPanier = document.getElementById('popup-panier');
+//   const closePanier = document.getElementById('close-panier');
 
   
-  btnPanier.addEventListener('click', () => {
-    popupPanier.classList.remove('hidden');
-  });
+//   btnPanier.addEventListener('click', () => {
+//     popupPanier.classList.remove('hidden');
+//   });
 
   
-  closePanier.addEventListener('click', () => {
-    popupPanier.classList.add('hidden');
-  });
+//   closePanier.addEventListener('click', () => {
+//     popupPanier.classList.add('hidden');
+//   });
 
   
-  popupPanier.addEventListener('click', (e) => {
-    if (e.target === popupPanier) {
-      popupPanier.classList.add('hidden');
-    }
-  });
+//   popupPanier.addEventListener('click', (e) => {
+//     if (e.target === popupPanier) {
+//       popupPanier.classList.add('hidden');
+//     }
+//   });
 
   /* pop up paiement */
 
-  const commanderBtn = document.getElementById('commander');
-  const popupPaiement = document.getElementById('popup-paiement');
-  const closePaiement = document.getElementById('close-paiement');
+  // const commanderBtn = document.getElementById('commander');
+  // const popupPaiement = document.getElementById('popup-paiement');
+  // const closePaiement = document.getElementById('close-paiement');
 
 
-  commanderBtn.addEventListener('click', () => {
-    popupPanier.classList.add('hidden');
-    popupPaiement.classList.remove('hidden');
-  });
-
-  
-  closePaiement.addEventListener('click', () => {
-    popupPaiement.classList.add('hidden');
-  });
+  // commanderBtn.addEventListener('click', () => {
+  //   popupPanier.classList.add('hidden');
+  //   popupPaiement.classList.remove('hidden');
+  // });
 
   
-  popupPaiement.addEventListener('click', (e) => {
-    if (e.target === popupPaiement) {
-      popupPaiement.classList.add('hidden');
-    }
-  });
+  // closePaiement.addEventListener('click', () => {
+  //   popupPaiement.classList.add('hidden');
+  // });
+
+  
+  // popupPaiement.addEventListener('click', (e) => {
+  //   if (e.target === popupPaiement) {
+  //     popupPaiement.classList.add('hidden');
+  //   }
+  // });
 
 fetch("../data/menu.json")
   .then(response => {
