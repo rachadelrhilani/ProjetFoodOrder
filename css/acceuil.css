@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 * {
-    padding: 0;
-    margin: 0;
-    font-weight: 800;
     color: #0f172b;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
@@ -11,6 +8,17 @@
 body {
     display: flex;
     flex-direction: column;
+}
+footer,
+footer * {
+    color: inherit !important;
+    font-weight: normal !important;
+}
+
+/* rétablit la couleur tailwind du footer */
+footer {
+    color: #d1d5db !important; /* équivalent à text-gray-300 */
+    font-weight: 400;
 }
 
 header {
