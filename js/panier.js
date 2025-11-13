@@ -1,3 +1,4 @@
+
 const pay = document.querySelector(".paiment ");
 const panier = document.querySelector(".panier");
 const Z = document.querySelector(".Z");

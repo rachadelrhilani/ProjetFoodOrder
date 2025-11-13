@@ -220,94 +220,80 @@
         </div>
     </footer>
 
+    
+       <div class="Z fixed">
+      <!-- panier popup -->
+      <div class="panier w-7/12 border-2 rounded-3xl">
+        <div class="panier-info w-10/12 overflow-auto h-full">
+          <!-- titre -->
+          <div id="p-title" class="flex items-center p-2">
+            <i class="fa-solid fa-utensils"></i>
+            <h1 class="text-5xl">Panier</h1>
+          </div>
+          <!--  -->
+          <div class="p-content flex flex-col justify-center items-center">
+            <!-- chaque plat -->
+           
 
-    <div class="Z fixed">
-        <!-- panier popup -->
-        <div class="panier w-7/12 border-2 rounded-3xl">
-            <div class="panier-info w-10/12 overflow-auto h-full">
-                <!-- titre -->
-                <div id="p-title" class="flex items-center p-2">
-                    <i class="fa-solid fa-utensils"></i>
-                    <h1 class="text-5xl">Panier</h1>
-                </div>
-                <!--  -->
-                <div class="p-content flex flex-col justify-center items-center">
-                    <!-- chaque plat -->
-                    <div class="panier-plat flex justify-between items-center w-4/4 p-3.5">
-                        <img src="" alt="plat" />
-                        <h2 class="text-3xl">Chicken burger</h2>
-                        <div class="pm">
-                            <button class="text-4xl decrease">-</button>
-                            <input readonly type="number" min="1"
-                                class="text-2xl flex justify-center items-center plat-count" />
-                            <button class="text-4xl increase">+</button>
-                        </div>
-                        <select class="text-3xl plat-size">
-                            <option value="">S</option>
-                            <option value="">L</option>
-                            <option value="">XL</option>
-                        </select>
-                        <!-- price n cnacel -->
-                        <div class="pc flex justify-between w-1/4">
-                            <label class="text-3xl price-tag">$100</label>
-                            <button class="text-3xl cancel">X</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- panier sidebar -->
-            <div class="panier-prix border-l-2 w-1/4 flex justify-around items-center flex-col rounded-r-3xl">
-                <h1 class="text-3xl">Sommaire</h1>
-                <hr />
-                <div class="grid grid-cols-2 gap-2">
-                    <h4>3 Plat</h4>
-                    <h4>200</h4>
-                    <h4>Livraison:</h4>
-                    <h4>50</h4>
-                </div>
-                <h2 class="text-2xl">Total: 200</h2>
-                <button id="commander" onclick="toPay()" class="p-2 rounded-2xl">
-                    Commander
-                </button>
-            </div>
+          </div>
         </div>
-        <!-- Formule de Payement -->
-        <div class="paiment flex-col justify-between items-center h-11/12 w-11/12 border p-5 md:w-5/12">
-            <h1 class="text-5xl flex">
-                <i class="fa-solid fa-utensils"></i> Paiement
-            </h1>
-            <hr />
-            <h2 class="text-2xl">Nom</h2>
-            <div class="flex justify-between gap-5">
-                <input type="text" placeholder="Nom" />
-                <input type="text" placeholder="Prenom" />
-            </div>
-            <h2>Email</h2>
-            <input type="email" placeholder="@gmail.com" class="in-email w-full" />
-            <h2>Adresse</h2>
-            <div class="adress grid">
-                <input type="text" placeholder="Ligne 1" />
-                <input type="text" placeholder="Ligne 2" />
-                <input type="text" placeholder="ville" />
-                <input type="text" placeholder="region" />
-                <input type="text" placeholder="Code Postal" />
-            </div>
-            <h3 class="text-2xl">Method de paiement:</h3>
-            <div class="">
-                <div class="w-full flex justify-start items-center">
-                    <input class="" type="radio" name="pay" />
-                    <label class="" for="">Carte debit/credit</label>
-                </div>
-                <div class="w-full flex justify-start items-center">
-                    <input class="" type="radio" name="pay" />
-                    <img src="images/paypal.png" alt="paypal" />
-                </div>
-            </div>
-            <button class="c-achat p-2">Confirmer</button>
+        <!-- panier sidebar -->
+        <div
+          class="panier-prix border-l-2 w-1/4 flex justify-around items-center flex-col rounded-r-3xl"
+        >
+          <h1 class="text-3xl">Sommaire</h1>
+          <hr />
+          <div class="grid grid-cols-2 gap-2">
+            <h4>3 Plat</h4>
+            <h4>200</h4>
+            <h4>Livraison:</h4>
+            <h4>50</h4>
+          </div>
+          <h2 class="text-2xl">Total: 200</h2>
+          <button id="commander" onclick="toPay()" class="p-2 rounded-2xl">
+            Commander
+          </button>
         </div>
+      </div>
+      <!-- Formule de Payement -->
+      <div
+        class="paiment flex-col justify-between items-center h-11/12 w-11/12 border p-5 md:w-5/12"
+      >
+        <h1 class="text-5xl flex">
+          <i class="fa-solid fa-utensils"></i> Paiement
+        </h1>
+        <hr />
+        <h2 class="text-2xl">Nom</h2>
+        <div class="flex justify-between gap-5">
+          <input type="text" placeholder="Nom" />
+          <input type="text" placeholder="Prenom" />
+        </div>
+        <h2>Email</h2>
+        <input type="email" placeholder="@gmail.com" class="in-email w-full" />
+        <h2>Adresse</h2>
+        <div class="adress grid">
+          <input type="text" placeholder="Ligne 1" />
+          <input type="text" placeholder="Ligne 2" />
+          <input type="text" placeholder="ville" />
+          <input type="text" placeholder="region" />
+          <input type="text" placeholder="Code Postal" />
+        </div>
+        <h3 class="text-2xl">Method de paiement:</h3>
+        <div class="">
+          <div class="w-full flex justify-start items-center">
+            <input class="" type="radio" name="pay" />
+            <label class="" for="">Carte debit/credit</label>
+          </div>
+          <div class="w-full flex justify-start items-center">
+            <input class="" type="radio" name="pay" />
+            <img src="images/paypal.png" alt="paypal" />
+          </div>
+        </div>
+        <button class="c-achat p-2">Confirmer</button>
+      </div>
     </div>
-
+    
+        
     <script src="../js/detail-plat.js"></script>
     <script src="../js/Contact.js"></script>
 

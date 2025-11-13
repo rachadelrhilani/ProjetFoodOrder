@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+  <link href="../css/panier.css" rel="stylesheet" />
+    <!-- panier script -->
+    <script src="../js/panier.js" defer></script>
+<!--  -->
     <link href="../output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -16,7 +20,7 @@
       <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
       <a href="#" class="hover:text-yellow-400">Menu</a>
       <a href="#" class="hover:text-yellow-400">Contact</a>
-      <button id="btn-panier"
+      <button onclick="panierOn()" id="btn-panier"
         class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
         <span>Pannier</span>
         <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" />
@@ -240,6 +244,81 @@
     </div>
 
   </footer>
+  
+  
+       <div class="Z fixed">
+      <!-- panier popup -->
+      <div class="panier w-7/12 border-2 rounded-3xl">
+        <div class="panier-info w-10/12 overflow-auto h-full">
+          <!-- titre -->
+          <div id="p-title" class="flex items-center p-2">
+            <i class="fa-solid fa-utensils"></i>
+            <h1 class="text-5xl">Panier</h1>
+          </div>
+          <!--  -->
+          <div class="p-content flex flex-col justify-center items-center">
+            <!-- chaque plat -->
+           
+
+          </div>
+        </div>
+        <!-- panier sidebar -->
+        <div
+          class="panier-prix border-l-2 w-1/4 flex justify-around items-center flex-col rounded-r-3xl"
+        >
+          <h1 class="text-3xl">Sommaire</h1>
+          <hr />
+          <div class="grid grid-cols-2 gap-2">
+            <h4>3 Plat</h4>
+            <h4>200</h4>
+            <h4>Livraison:</h4>
+            <h4>50</h4>
+          </div>
+          <h2 class="text-2xl">Total: 200</h2>
+          <button id="commander" onclick="toPay()" class="p-2 rounded-2xl">
+            Commander
+          </button>
+        </div>
+      </div>
+      <!-- Formule de Payement -->
+      <div
+        class="paiment flex-col justify-between items-center h-11/12 w-11/12 border p-5 md:w-5/12"
+      >
+        <h1 class="text-5xl flex">
+          <i class="fa-solid fa-utensils"></i> Paiement
+        </h1>
+        <hr />
+        <h2 class="text-2xl">Nom</h2>
+        <div class="flex justify-between gap-5">
+          <input type="text" placeholder="Nom" />
+          <input type="text" placeholder="Prenom" />
+        </div>
+        <h2>Email</h2>
+        <input type="email" placeholder="@gmail.com" class="in-email w-full" />
+        <h2>Adresse</h2>
+        <div class="adress grid">
+          <input type="text" placeholder="Ligne 1" />
+          <input type="text" placeholder="Ligne 2" />
+          <input type="text" placeholder="ville" />
+          <input type="text" placeholder="region" />
+          <input type="text" placeholder="Code Postal" />
+        </div>
+        <h3 class="text-2xl">Method de paiement:</h3>
+        <div class="">
+          <div class="w-full flex justify-start items-center">
+            <input class="" type="radio" name="pay" />
+            <label class="" for="">Carte debit/credit</label>
+          </div>
+          <div class="w-full flex justify-start items-center">
+            <input class="" type="radio" name="pay" />
+            <img src="images/paypal.png" alt="paypal" />
+          </div>
+        </div>
+        <button class="c-achat p-2">Confirmer</button>
+      </div>
+    </div>
+    
+
     <script src="../js/Menu.js"></script>
 </body>
 </html>
