@@ -162,6 +162,7 @@ fetch("../Menu.json")
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
+      location.reload()
       alert(`${plat.name} a été ajouté au panier !`);
     });
   })
