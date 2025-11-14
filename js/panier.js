@@ -46,6 +46,7 @@ function ticket() {
             doc.text(item.name, 10, y);
         }
 
+        doc.text(item.name.toString(), 0, y);
         doc.text(item.quantity.toString(), 60, y);
         doc.text(item.size || "-", 100, y);
         doc.text(itemTotal.toFixed(2) + " Dhs", 140, y);
