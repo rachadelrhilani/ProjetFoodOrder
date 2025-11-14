@@ -7,6 +7,11 @@
     <link href="../output.css" rel="stylesheet">
     <link href="../css/panier.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+   <link href="../css/panier.css" rel="stylesheet" />
+    <!-- panier script -->
+    <script src="../js/panier.js" defer></script>
+    <!--  -->
 </head>
 <body>
      <header class="bg-[#0F172A] text-white flex items-center justify-between px-6 py-4">
@@ -17,7 +22,7 @@
       <a href="../index.html" class="hover:text-yellow-400">Accueil</a>
       <a href="Menu.html" class="hover:text-yellow-400">Menu</a>
       <a href="Contact.html" class="hover:text-yellow-400">Contact</a>
-      <button id="btn-panier"
+      <button onclick="panierOn()" id="btn-panier"
         class="hidden md:flex items-center bg-yellow-500 hover:bg-yellow-400 text-white px-4 py-2 font-semibold space-x-2">
         <span>Pannier</span>
         <img src="../images/Shopping cart.png" alt="Shopping cart" class="w-5 h-5" />
@@ -346,5 +351,6 @@
 
     <script src="../js/Menu.js"></script>
     <script src="../js/panier.js"></script>
+    <script src="../js/detail-plat.js"></script>
 </body>
 </html>

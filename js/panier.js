@@ -161,3 +161,21 @@ btnConfirmer.addEventListener("click", () => {
 
   alert("Prener botre recu");
 });
+
+/* btnConfirmer.addEventListener("click",()=>{
+
+  
+ const options = {
+    margin: 10,
+    filename: "panier.pdf",
+    image: { type: "jpeg", quality: 1 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+  };
+
+  html2pdf()
+    .from(platContainer)      
+    .set(options)              
+    .save();   
+
+}) */
