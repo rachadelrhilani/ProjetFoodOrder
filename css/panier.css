@@ -41,6 +41,7 @@ hr {
     background: #0f172b;
     color: #fea116;
     width: 60px;
+    text-align: center;
   }
   select,
   option {
@@ -184,7 +185,6 @@ hr {
   }
   .plat-count {
     width: 300px;
-    text-align: center;
   }
   .pc {
     width: 100%;
