@@ -237,8 +237,8 @@
 
 
     </footer>
-     <div class="Z fixed">
-
+       
+   <div class="Z fixed">
       <!-- panier popup -->
       <div class="panier w-7/12 border-2 rounded-3xl">
         <div class="panier-info w-10/12 overflow-auto h-full">
@@ -287,9 +287,9 @@
           <h1 class="text-3xl">Sommaire</h1>
           <hr />
           <div class="grid grid-cols-2 gap-2">
-            <h4 class="plat-num">3 Plats</h4>
+            <h4 class="plat-num"></h4>
           </div>
-          <h2 class="text-2xl total-prix">Total: 200</h2>
+          <h2 class="text-2xl total-prix"></h2>
           <button id="commander" onclick="toPay()" class="p-2 rounded-2xl">
             Commander
           </button>
@@ -305,18 +305,18 @@
         <hr />
         <h2 class="text-2xl">Nom</h2>
         <div class="flex justify-between gap-5">
-          <input type="text" placeholder="Nom" />
-          <input type="text" placeholder="Prenom" />
+          <input type="text" class="pay-nom" placeholder="Nom" />
+          <input type="text" class="pay-prenom" placeholder="Prenom" />
         </div>
         <h2>Email</h2>
         <input type="email" placeholder="@gmail.com" class="in-email w-full" />
         <h2>Adresse</h2>
         <div class="adress grid">
-          <input type="text" placeholder="Ligne 1" />
-          <input type="text" placeholder="Ligne 2" />
-          <input type="text" placeholder="ville" />
-          <input type="text" placeholder="region" />
-          <input type="text" placeholder="Code Postal" />
+          <input type="text" class="pay-l1" placeholder="Ligne 1" />
+          <input type="text" class="pay-l2" placeholder="Ligne 2" />
+          <input type="text" class="pay-v" placeholder="ville" />
+          <input type="text" class="pay-r" placeholder="region" />
+          <input type="text" class="pay-pos" placeholder="Code Postal" />
         </div>
         <h3 class="text-2xl">Method de paiement:</h3>
         <div class="">
@@ -326,13 +326,13 @@
           </div>
           <div class="w-full flex justify-start items-center">
             <input class="" type="radio" name="pay" />
-            <img src="images/paypal.png" alt="paypal" />
+            <img src="../images/paypal.png" alt="paypal" />
           </div>
         </div>
         <button class="c-achat p-2">Confirmer</button>
       </div>
     </div>
-    
+ 
     <script src="/js/acceuil.js"></script>
 
   </body>
