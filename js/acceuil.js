@@ -133,3 +133,7 @@ function initPagination() {
 }
 
 
+let steps = document.getElementById("staircase");
+newbutton.addEventListener("click", function() {
+    document.querySelector(".staircase div:last-child").remove();
+})
