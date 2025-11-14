@@ -1,6 +1,70 @@
 const pay = document.querySelector(".paiment");
 const panier = document.querySelector(".panier");
 const Z = document.querySelector(".Z");
+const btnConfirmer = document.querySelector(".c-achat");
+
+function ticket() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let y = 20; 
+    let total = 0;
+
+    doc.setFontSize(18);
+    doc.text("Reçu de Commande", 105, y, { align: "center" });
+    y += 10;
+
+    doc.setFontSize(14);
+    doc.text("Panier:", 10, y);
+    y += 8;
+
+    doc.setFontSize(12);
+    doc.text("Plat", 10, y);
+    doc.text("Quantité", 60, y);
+    doc.text("Taille", 100, y);
+    doc.text("Prix", 140, y);
+    y += 4;
+
+    doc.setLineWidth(0.5);
+    doc.line(10, y, 200, y);
+    y += 6;
+
+    cart.forEach(item => {
+        const itemTotal = parseFloat(item.price) * item.quantity;
+        total += itemTotal;
+
+        if (item.image) {
+            const img = new Image();
+            img.src = item.image;
+            img.onload = () => {
+                doc.addImage(img, 'JPEG', 10, y - 4, 20, 20); 
+                doc.text(item.name, 35, y); 
+            };
+        } else {
+            doc.text(item.name, 10, y);
+        }
+
+        doc.text(item.quantity.toString(), 60, y);
+        doc.text(item.size || "-", 100, y);
+        doc.text(itemTotal.toFixed(2) + " Dhs", 140, y);
+        y += 10;
+
+        if (y > 270) {
+            doc.addPage();
+            y = 20;
+        }
+    });
+
+    doc.setFontSize(14);
+    doc.text(`Total: ${total.toFixed(2)} Dhs`, 10, y + 10);
+
+    doc.save("panier.pdf");
+};
+
+
+
 //total
 let total = 0;
 
@@ -98,20 +162,21 @@ function creePlat() {
       creePlat();
     });
     total += parseFloat(price.textContent);
-console.log(total);
+    console.log(total);
 
-const planNum = document.querySelector(".plat-num");
-const totalPrix = document.querySelector(".total-prix");
+    const planNum = document.querySelector(".plat-num");
+    const totalPrix = document.querySelector(".total-prix");
 
-planNum.innerHTML = `${cart.length} plats `;
-totalPrix.innerHTML = `${parseFloat(total).toFixed(2)} Dhs`
+    planNum.innerHTML = `${cart.length} plats `;
+    totalPrix.innerHTML = `${parseFloat(total).toFixed(2)} Dhs`;
   });
+/////////////////
+  
+
 }
 creePlat();
 
 //REGEX
-
-const btnConfirmer = document.querySelector(".c-achat");
 
 btnConfirmer.addEventListener("click", () => {
   const nom = document.querySelector(".pay-nom");
@@ -122,60 +187,23 @@ btnConfirmer.addEventListener("click", () => {
   const region = document.querySelector(".pay-r");
   const postal = document.querySelector(".pay-pos");
 
-  if (nom.value.trim() === "") {
+
+if (nom.value.trim() === "") {
     alert("Le champ Nom est obligatoire.");
-    return;
-  }
-
-  if (prenom.value.trim() === "") {
+} else if (prenom.value.trim() === "") {
     alert("Le champ Prenom est obligatoire.");
-    return;
-  }
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email.value)) {
+} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
     alert("Veuillez entrer une adresse email valide.");
-    return;
-  }
-
-  if (l1.value== "") {
-    alert("igne 1 est obligatoire.");
-    return;
-  }
-
-  if (ville.value== "") {
+} else if (l1.value === "") {
+    alert("Ligne 1 est obligatoire.");
+} else if (ville.value === "") {
     alert("La ville est obligatoire.");
-    return;
-  }
-
-  if (region.value== "") {
+} else if (region.value === "") {
     alert("La région est obligatoire.");
-    return;
-  }
-
-  const postalRegex = /^[0-9]{4,6}$/;
-  if (!postalRegex.test(postal.value)) {
+} else if (!/^[0-9]{4,6}$/.test(postal.value)) {
     alert("Le code postal doit contenir uniquement des chiffres (4 à 6 chiffres).");
-    return;
-  }
-
-  alert("Prener botre recu");
+} else {
+    alert("Prenez votre reçu");
+btnConfirmer.addEventListener("click", ticket())
+}
 });
-
-/* btnConfirmer.addEventListener("click",()=>{
-
-  
- const options = {
-    margin: 10,
-    filename: "panier.pdf",
-    image: { type: "jpeg", quality: 1 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
-  };
-
-  html2pdf()
-    .from(platContainer)      
-    .set(options)              
-    .save();   
-
-}) */
