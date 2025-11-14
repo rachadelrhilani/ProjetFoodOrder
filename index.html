@@ -6,12 +6,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/acceuil.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
    <link href="css/panier.css" rel="stylesheet" />
     <!-- panier script -->
     <script src="js/panier.js" defer></script>
     <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 
 </head>
 
@@ -46,7 +47,7 @@
     </header>
     <main>
 
-        <section class="first-part">
+    <section class="first-part">
             <div>
                 <i class="fa-solid fa-user-tie"></i>
                 <h2>maitre cuisiniers</h2>
@@ -78,7 +79,7 @@
 
         </section>
 
-        <section class="second-part">
+    <section class="second-part">
             <div class="imge-grid">
                 <div>
                     <img src="/images/about-1.jpg.png" alt="restorant image1">
@@ -120,7 +121,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
     <section class="third-part ">
         <div class="menu-header">
@@ -131,8 +132,7 @@
         <div id="menu-carousel-container"></div>
     </section>
 
-
-        <section class="fourth-part">
+    <section class="fourth-part">
             <div>
                 <p>Team Member</p>
                 <h2>Nos maitres cuisiniers</h2>
@@ -159,7 +159,7 @@
                     <p>Designation</p>
                 </div>
             </div>
-        </section>
+    </section>
 
     <section class="fifth-part">
         <div class="testimonial-header">
@@ -175,84 +175,64 @@
 
     </main>
 
-    <footer class="bg-[#0F172A] text-gray-300 py-12 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4 class="footer-title">Company</h4>
+            <ul class="footer-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
 
-            <div>
-                <h4
-                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
-                    Company</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-yellow-400">Accueil</a></li>
-                    <li><a href="#" class="hover:text-yellow-400">Menu</a></li>
-                    <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4
-                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
-                    Contact</h4>
-                <p class="text-sm">123 Street, New York, USA</p>
-                <p class="text-sm mt-1">+012 345 67890</p>
-                <p class="text-sm mt-1">info@example.com</p>
-                <div class="flex space-x-3 mt-4">
-                    <a href="#"><img src="../images/facebook.png" alt="facebook"
-                            class="w-6 h-6 hover:scale-110 transition-transform" /></a>
-                    <a href="#"><img src="../images/twitter.png" alt="twitter"
-                            class="w-6 h-6 hover:scale-110 transition-transform" /></a>
-                    <a href="#"><img src="../images/youtube.png" alt="instagram"
-                            class="w-6 h-6 hover:scale-110 transition-transform" /></a>
-                </div>
-            </div>
-
-            <div>
-                <h4
-                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
-                    Opening</h4>
-                <p class="text-sm">Monday - Saturday<br /><span class="text-gray-400">09AM - 09PM</span></p>
-                <p class="text-sm mt-3">Sunday<br /><span class="text-gray-400">10AM - 08PM</span></p>
-            </div>
-
-            <div>
-                <h4
-                    class="text-lg font-semibold text-yellow-500 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 after:mt-1">
-                    Newsletter</h4>
-                <p class="text-sm mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                <div class="relative max-w-xs">
-                    <input type="email" placeholder="Your email"
-                        class="w-full rounded-md border border-gray-300 px-3 py-2 pr-20 text-gray-700 focus:outline-none" />
-                    <button
-                        class="absolute right-0 top-0 h-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-4 rounded-r-md">
-                        SIGNUP
-                    </button>
-                </div>
+        <div class="footer-section">
+            <h4 class="footer-title">Contact</h4>
+            <p>123 Street, New York, USA</p>
+            <p>+012 345 67890</p>
+            <p>info@example.com</p>
+            <div class="footer-social">
+                <a href="#"><img src="../images/facebook.png" alt="facebook" /></a>
+                <a href="#"><img src="../images/twitter.png" alt="twitter" /></a>
+                <a href="#"><img src="../images/youtube.png" alt="youtube" /></a>
             </div>
         </div>
 
+        <div class="footer-section">
+            <h4 class="footer-title">Opening</h4>
+            <p>Monday - Saturday<br /><span>09AM - 09PM</span></p>
+            <p>Sunday<br /><span>10AM - 08PM</span></p>
+        </div>
 
-        <div
-            class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>
-                © <span class="text-yellow-500 font-semibold">FoodOrder</span>, All Rights Reserved. Designed By
-                <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
-            </p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-yellow-400">Accueil</a>
-                <a href="#" class="hover:text-yellow-400">Menu</a>
-                <a href="#" class="hover:text-yellow-400">Contact Us</a>
+        <div class="footer-section">
+            <h4 class="footer-title">Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Your email" />
+                <button>SIGNUP</button>
             </div>
-
         </div>
-        <div
-            class="max-w-6xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>
-                Distributed By
-                <a href="#" class="text-yellow-500 hover:underline">Sharks Squad</a>
-            </p>
-        </div>
+    </div>
 
-    </footer>
+    <div class="footer-bottom">
+        <p>
+            © <span>FoodOrder</span>, All Rights Reserved. Designed By
+            <a href="#">Sharks Squad</a>
+        </p>
+        <div class="footer-menu">
+            <a href="#">Accueil</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="footer-distributed">
+        <p>
+            Distributed By <a href="#">Sharks Squad</a>
+        </p>
+    </div>
+</footer>
+
 
        <div class="Z fixed">
       <!-- panier popup -->
